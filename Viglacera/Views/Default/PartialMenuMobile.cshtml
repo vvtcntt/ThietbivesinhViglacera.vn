@@ -1,0 +1,19 @@
+﻿<div id="page">
+    <div class="header">
+        <a href="#menu"></a>
+        Danh mục sản phẩm
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#about">Danh mục sản phẩm</a>
+                <ul>
+                    @Html.Raw(ViewBag.chuoimenu)
+                     
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>

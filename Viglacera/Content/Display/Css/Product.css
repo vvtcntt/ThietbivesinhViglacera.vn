@@ -1,0 +1,98 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#ProductDetail{ width:100%; height:auto; float:left; margin:0px}
+#ProductDetail .nVar_Product{width:100%; height:21px; float:left; margin:0px; background:url(../iCon/bg_NvarProduct.png) no-repeat left center scroll transparent; background-position:1px}
+#ProductDetail .nVar_Product span{ font-size:13px; text-transform:uppercase; color:#605d5d; line-height:21px; margin:2px 17px}
+#ProductDetail #Content_Product{ width:100%; height:auto; margin:10px 0px; float:left}
+#ProductDetail #Content_Product #Top_Product{ width:100%; height:auto; margin:0px; float:left}
+#ProductDetail #Content_Product #Top_Product #Left_TopProduct{ width: 370px; height:auto; float:left; margin:0px;    position:relative}
+#ProductDetail #Content_Product #Top_Product #Left_TopProduct #Image_Detail{width:100%; height:auto; float:left; margin:0px; display:table; table-layout:fixed}
+#ProductDetail #Content_Product #Top_Product #Left_TopProduct  #Image_Detail a{ display:table-cell; vertical-align:middle; text-align:center}
+#ProductDetail #Content_Product #Top_Product #Left_TopProduct  #Image_Detail a img{ max-width:98%; height:auto; margin:2px}
+#ProductDetail #Content_Product #Right_TopProduct{ width:475px; height:auto; float:left; margin:0px 5px}
+ #Right_TopProduct h1{ font-size:15px; color:#088ada; text-transform:uppercase; margin:0px 5px}
+  #Right_TopProduct h2{ font-size:12px; margin:3px 5px 18px 5px; color:#5a5a5a; font-weight:normal; font-style:italic; text-align:justify}
+ #Right_TopProduct .Code{ font-size:12px; margin:3px 5px; display:block; color:#494848}
+  #Right_TopProduct .Address{ font-size:12px; margin:7px 5px; display:block; color:#494848}
+   #Right_TopProduct .Status{ font-size:12px; margin:7px 5px; display:block; color:#494848}
+ #Right_TopProduct .Vat{ font-size:12px; margin:7px 5px; display:block; color:#494848}
+  #Right_TopProduct .Price{ color:#088ada; display:block; font-size:13px; margin:10px 5px 5px 5px}
+    #Right_TopProduct .PriceSale{ color:#ff7200; display:block; font-size:15px; margin: 5px; font-weight:bold}
+	#BoxOrder{ width:100%; height:auto;  float:left; margin:0px 0px}
+#BoxOrder span{ line-height:31px; color:#494848; margin: auto 5px; float:left}
+#BoxOrder .txtOrd{  width: 40px;
+  float: left;
+  height: 19px;
+  border: 1px solid #cacaca;
+  margin: 4px 5px 0px 15px; text-align:center; color:#ff7200
+}
+.hr1{ width:80%; height:1px; background:#f0f0f0; border:none; margin:15px auto }
+#BoxOrder .btnOrder {
+  width: 109px;
+  height: 31px;
+  border: none;
+  background: url(../iCon/icon_dathang.png) no-repeat left center scroll transparent;
+  float: left;
+}
+#Sale{  width: 95%;
+  height: auto;
+  float: left;
+  margin: 5px;
+  background: url(../iCon/iconChuY.png) no-repeat left center scroll #fef3df;
+  min-height: 20px;
+  border: 1px solid #F2E7D2;
+  background-position: 5px;
+}
+#Sale span{  color: #575757;
+  margin: 5px 5px 5px 30px;
+  display: block;}
+  #spch{ width:100px; height:87px; right:5px; top:5px; position:absolute; background:url(../iCon/spch.png) no-repeat transparent}
+#ProductDetail  #Detail{ width:100%; height:auto; float:left; margin:15px 0px 5px 0px}
+#ProductDetail .nDetail{ width:100%; height:28px; background:url(../iCon/nvar_Detail.png) repeat-x left center scroll transparent; float:left}
+#ProductDetail .nDetail span{ font-size:12px; text-transform:uppercase; line-height:28px; color:#727272; margin:auto 5px; font-weight:bold}
+#ProductDetail .ContentDetail{ width:99%; height:auto;margin:10px auto; line-height:18px}
+#ProductDetail .ContentDetail h3{font-size: 20px;
+  color: #ff8111; text-transform:uppercase;
+  font-family: UTMCafeta;
+  font-weight: normal;
+  margin: 2px;}
+#ProductDetail .ContentDetail img{ max-width:98%; height:auto; margin:5px auto; display:block}
+#ProductDetail .ContentParameter{ width:99%; height:auto;margin:10px auto}
+#ProductDetail .ContentParameter h3{font-size: 25px;
+  color: #ff8111;
+  text-transform:uppercase;
+  font-family: UTMCafeta;
+  font-weight: normal;
+  margin: 2px;}
+  #ProductDetail .ContentParameter img{ max-width:98%; width:auto; height:auto; margin:5px auto; display:block}
+  #Comment{  width: 100%;
+  height: auto;
+  float: left;
+  margin: 10px 0px;}
+   #Comment .nVar_Comment {  width: 100%;
+  height: 35px;
+  float: left;
+  margin: 0px;
+  line-height: 35px;
+  background: url(../iCon/comments-icon.png) no-repeat left center;
+  background-position: 5px;}
+   #Comment .nVar_Comment span {
+  color: #5f5f5f;
+  text-transform: uppercase;
+  display: block;
+  margin: auto auto auto 50px;
+}
+.ContentComment{  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+  float: left;}
+ .Slution {
+  width: 100%;
+  height: auto;
+  margin: 5px 0px;
+  float: left;
+}
+
+#ProductDetail #Detail li{ list-style:armenian}
+#Content_RightProduct #Content_Des{ width:100%; height:auto; margin:7px 0px; float:left; font-size:12px}

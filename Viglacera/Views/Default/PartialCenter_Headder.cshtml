@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Viglacera.Models.tblImage>
+<div id="Adw_Centter">
+    @foreach(var item in Model)
+    { 
+    <a href="@item.Url" title="@item.Name" rel="@item.Link"><img class="Adw" src="@item.Images" alt="@item.Name" /></a>
+    }
+    
+     
+</div>

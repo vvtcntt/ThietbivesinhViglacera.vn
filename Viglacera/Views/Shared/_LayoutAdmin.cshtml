@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title> 
+    <link rel="Shortcut Icon" href="~/Content/Admin/Images/Admin/administrator.png" type="image/x-icon" />
+
+     <link type="text/css" rel="stylesheet" href="~/Content/Admin/Styles/Admin.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/Admin/Styles/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/Admin/Styles/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/Admin/Styles/style.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/Admin/Styles/style_default.css">
+    <link type="text/css" rel="Stylesheet" href="~/Content/Admin/Styles/jquery-ui-1.9.2.custom.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/Admin/Styles/iselector.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Admin/Styles/jquery.fancybox.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="~/Content/Admin/Styles/imodal.css">
+    <script type="text/javascript" src="~/Content/Admin/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/jquery-2.2.0.min.js"></script>
+    <script src="~/Scripts/jquery-2.2.0.js"></script>
+ 
+    <script type="text/javascript" src="~/Content/Admin/Scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/Scripts/common.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/Scripts/iselector.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/Scripts/admin.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/Scripts/imodal.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/Admin/Scripts/scripts.js"></script>
+    <script src="~/Content/ckfinder/ckfinder.js"></script>
+     <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <link href="~/Content/Display/Style/Popup.css" rel="stylesheet" />
+    <script type="text/javascript"> var $j = jQuery.noConflict();</script>
+
+
+</head>
+<body>
+          
+        @{Html.RenderAction("partialBanner", "Admin");}
+
+        <div id="container" class="row-fluid">
+            <div class="clear" style="height: 10px">
+            </div>
+            <div class="boder_menu">
+
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-cogs"></i> Cấu hình</span>
+                            </a>
+                            <ul>
+                                <li class="SubFirst">
+                                    <a href="/Config">
+                                        <span class="SubMenuText">
+                                            Cấu hình website
+                                        </span>
+                                    </a>
+                                </li> 
+                                <li class="SubFirst">
+                                    <a href="/Mapsad/Edit">
+                                        <span class="SubMenuText">
+                                            Bản đồ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/Banks">
+                                        <span class="SubMenuText">
+                                            Thanh toán
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/Module">
+                                        <span class="SubMenuText">
+                                            Hạng mục quyền
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/Hotline">
+                                        <span class="SubMenuText">
+                                            Điện thoại hỗ trợ
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-tags"></i> Sản phẩm</span>
+                            </a>
+                            <ul>
+                                
+                                <li>
+                                    <a href="/GroupProduct">
+                                        <span class="SubMenuText">
+                                            Danh mục sản phẩm
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/Productad">
+                                        <span class="SubMenuText">
+                                            Danh sách sản phẩm
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/Productsynad">
+                                        <span class="SubMenuText">
+                                           Sản phẩm đồng bộ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/Productsalead">
+                                        <span class="SubMenuText">
+                                            Chương trình khuyến mại
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/FunctionProduct">
+                                        <span class="SubMenuText">
+                                            Chức năng sản phẩm
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="SubFirst">
+                                    <a href="/ColorProduct">
+                                        <span class="SubMenuText">
+                                            Màu sắc sản phẩm
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Criteria">
+                                        <span class="SubMenuText">
+                                            Thuộc tính sản phẩm                                        
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="/Web">
+                                        <span class="SubMenuText">
+                                            Website theo danh mục
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Manufacturesad">
+                                        <span class="SubMenuText">
+                                            Nhà sản xuất
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="SubMenuText">
+                                            Danh mục tùy chọn
+                                        </span>
+                                    </a>
+                                </li>
+                                 
+                                <li>
+                                    <a href="#">
+                                        <span class="SubMenuText">
+                                            Đánh giá, phản hồi sản phẩm
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Productad/ProductCheck">
+                                        <span class="SubMenuText">
+                                            Sản phẩm chưa duyệt
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-th-large"></i> Nội dung</span>
+                            </a>
+                            <ul>
+                                <li class="SubFirst">
+                                    <a href="/GroupNews">
+                                        <span class="SubMenuText">
+                                            Quản lý tin tức
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Newsad">
+                                        <span class="SubMenuText">
+                                            Danh mục tin
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Agencyad">
+                                        <span class="SubMenuText">
+                                            Nhà phân phối
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=gallery">
+                                        <span class="SubMenuText">
+                                            Quản lý Slideshow ảnh
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=download">
+                                        <span class="SubMenuText">
+                                            Quản lý download
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=pages">
+                                        <span class="SubMenuText">
+                                            Quản lý trang chức năng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=filemanager">
+                                        <span class="SubMenuText">
+                                            Quản lý ảnh
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-picture"></i> Hình ảnh</span>
+                            </a>
+                            <ul>
+                                <li class="SubFirst">
+                                    <a href="/GroupImages">
+                                        <span class="SubMenuText">
+                                            Quản lý nhóm ảnh
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Imagesad">
+                                        <span class="SubMenuText">
+                                            Hình ảnh
+                                        </span>
+                                    </a>
+                                </li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-shopping-cart"></i> Đơn hàng</span>
+                            </a>
+                            <ul>
+                                <li class="SubFirst">
+                                    <a href="/Orderad">
+                                        <span class="SubMenuText">
+                                            Danh sách đơn hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                 
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-signin"></i> Liên kết</span>
+                            </a>
+                            <ul>
+                                <li class="SubFirst">
+                                    <a href="/Urlad">
+                                        <span class="SubMenuText">
+                                            Danh sách liên kết
+                                        </span>
+                                    </a>
+                                </li>
+                                 
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="TopMenuItem" href="javascript:;">
+                                <span class="MenuText"><i class="icon-user"></i> Khách hàng</span>
+                            </a>
+                            <ul>
+                                <li class="SubFirst">
+                                    <a href="/admin.aspx?module=contacts">
+                                        <span class="SubMenuText">
+                                            Liên hệ từ khách hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=customers">
+                                        <span class="SubMenuText">
+                                            Danh sách khách hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=customergroups">
+                                        <span class="SubMenuText">
+                                            Nhóm khách hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/admin.aspx?module=emailsubscription">
+                                        <span class="SubMenuText">
+                                            Danh sách Email đăng ký
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main-content">
+                @RenderBody()
+                <div style="margin-right: 25px; float: right; color: Gray;">
+                    Copyright © 2016 BIGSEA Vietnam Co. Ltd. All Rights Reserved
+
+                </div>
+                <div style="height: 10px; margin-top: 40px;">
+                </div>
+            </div>
+        </div>
+        <span id="additionalAttr"></span>
+         
+      
+</body>
+</html>

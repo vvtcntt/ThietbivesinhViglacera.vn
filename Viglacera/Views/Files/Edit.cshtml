@@ -1,0 +1,130 @@
+﻿@model Viglacera.Models.tblFile
+
+@{
+    ViewBag.Title = "Edit"; Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#SelectImages").click(function () {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                $("#File").val(fileUrl);
+            };
+            finder.popup();
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#SelectImage").click(function () {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                $("#Image").val(fileUrl);
+            };
+            finder.popup();
+        });
+    });
+</script>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+
+    <div class="Nvar_Content_Detail">
+        <div class="Left_Nvar">
+            <img src="/Content/Admin/Icon/folder.png" alt="Danh mục sản phẩm" />Add Filé
+        </div>
+
+    </div>
+    <div class="Content_Content_Detail">
+
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Name :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextBoxFor(p => p.Name, new { @class = "Leght_2" })
+
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Description :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextAreaFor(p => p.Description, new { @class = "Leght_6" })
+
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Files :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextBoxFor(p => p.File, new { @class = "Leght_4" })&nbsp;<input id="SelectImages" type="button" value="Browser" />
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Title Meta :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextBoxFor(p => p.Title, new { @class = "Leght_2" })
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1" id="Test">
+                <span>Group Product :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.DropDownList("drMenu", "===== Select Group Product=====")
+
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Keyword Meta :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextAreaFor(p => p.Keywork, new { @class = "Leght_6" })
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Images Thumb :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextBoxFor(p => p.Image, new { @class = "Leght_4" })&nbsp;<input id="SelectImage" type="button" value="Browser" />
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Ord:</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.TextBoxFor(p => p.Ord, new { @class = "txtWarraty"})
+
+            </div>
+        </div>
+        <div class="tr_1">
+            <div class="left_tr1">
+                <span>Active :</span>
+            </div>
+            <div class="Right_tr1">
+                @Html.RadioButtonFor(p => p.Active, "true", new { @id = "Active" }) : Yes
+                @Html.RadioButtonFor(p => p.Active, "false", new { @id = "Active" }): No
+            </div>
+        </div>
+
+
+        <div class="tr_1">
+            <div class="left_tr1">
+            </div>
+            <div class="Right_tr1">
+                <button type="submit" id="btnAdd" name="btnAdd" class="btnAdd">Save</button>
+
+            </div>
+        </div>
+    </div>
+}

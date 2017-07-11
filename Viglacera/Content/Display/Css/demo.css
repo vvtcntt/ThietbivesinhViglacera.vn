@@ -1,0 +1,51 @@
+ 
+.header,
+.content,
+.footer
+{
+	text-align: center;
+}
+.header,
+.footer
+{
+	background: #088ada;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 40px;
+
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	width: 100%;
+	height: 40px;
+	padding: 0 5px;
+}
+.header.fixed
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.header a
+{
+	background: center center no-repeat transparent;
+	background-image:url(../iCon/nvar.png);
+
+	display: block;
+	width: 40px;
+	height: 40px;
+ 	top: 0;
+	left: 2px;
+	float:left;
+}
+.content
+{
+	padding: 150px 50px 50px 50px;
+}

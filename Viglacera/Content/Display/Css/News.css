@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+#Content_MenuLeft .ul_n {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  float: left;
+}
+#Content_MenuLeft .ul_n .li_n a{ margin:5px; display:block; color:#999999; font-weight:bold}
+#Content_MenuLeft .ul_n .li_n a:hover{ font-weight:normal; color:#555555}
+#Content_MenuLeft .ul_n .li_n  { border-bottom: 1px dotted #e1dcdc }
+#Content_MenuLeft .ul_n .li_n ul { margin:10px 0px}
+#Content_MenuLeft .ul_n .li_n ul li { margin:2px 5px 2px 7px} 
+#Content_MenuLeft .ul_n .li_n ul li a{ font-weight:normal; margin:10px 0px; display:block}
+#News_Detail{ width:100%; height:auto; float:left; margin:0px}
+.nVar_New{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0px 0px 5px 0px;
+}
+.nVar_New h1{  font-size: 16px;
+  color: #7C7A7A;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 1px 5px}
+  .Tear_News{ width:100%; height:auto; float:left; margin:5px 0px; border-bottom:1px dashed #e6e5e5}
+.Tear_News:last-child{border:none}
+.Tear_News img{ width:120px; height:auto; float:left; margin:2px 8px 10px 5px} 
+.Tear_News .Namenews{ font-weight:bold; color:#555555; margin:2px 5px; display:block}
+.Tear_News .Namenews span{ font-weight:normal; font-style:italic; font-size:11px}
+.Tear_News .HeadShort{ font-size:12px; color:#828282; margin:2px 5px; display:block; text-align:justify}
+
+ #News_Detail h1{ font-size: 16px;
+color: #505050;
+text-transform: uppercase;
+font-weight: normal;
+margin: 1px 1px;
+}
+#News_Detail .Date{ font-size:11px; color:#b9b9b9; font-style:italic; margin:2px 1px; display:block}
+
+#News_Detail .DescriptionNews{ width:100%; height:auto; margin:10px 0px 10px 0px; font-size:12px; color:#606060; text-indent:15px; text-align:justify }
+#News_Detail .Contentnews{ width:100%; height:auto; margin:0px; font-size:12px; color:#606060; text-align:justify }
+#News_Detail .Contentnews img{ max-width:95%; height:auto; margin:2px auto; display:block}
+#News_Detail .Tintuclienquan { width:100%; height:auto; margin:2px 0px 2px 0px; font-size:12px; color:#606060; text-indent:15px}
+#News_Detail .Tintuclienquan a{ font-style:italic; color:#b3b0b0; display:block; margin:3px 1px}

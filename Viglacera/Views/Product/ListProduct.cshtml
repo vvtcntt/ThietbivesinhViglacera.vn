@@ -1,0 +1,60 @@
+﻿@{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+<div class="Clear"></div>
+<div class="Root">
+    <div class="Left">
+        @Html.Raw(ViewBag.nUrl)
+    </div>
+    <div class="share">
+        <span>Chia sẻ</span>
+        <a class="share-face" target="_blank" href="">&nbsp;</a>
+        <a class="share-mail-2" target="_blank" href="mailto:seabig.vn@gmail.com?Subject=Viglacera Website - Tôi quan tâm tới mục này&amp;body=@Request.Url.ToString()">&nbsp;</a>
+        <a class="share-google" target="_blank" href="https://plus.google.com/share?url=@Request.Url.ToString()">&nbsp;</a>
+    </div>
+</div>
+<div class="Clear"></div>
+ 
+<div id="ListProduct">
+    <div id="Left_Product">
+        <div id="MenuLeft">
+            @Html.Raw(ViewBag.ChuoiMenu)
+        </div>
+        @{Html.RenderAction("MenuProductDetail", "LeftContent");}
+        @{Html.RenderAction("PartialSupport", "LeftContent");}
+    </div>
+    <div id="Right_Product">
+        <div class="nVar_Right_Product">
+            <div class="Left_RightProduct">
+                <span>Danh sách sản phẩm</span>
+            </div>
+            <div class="Right_RightProduct">
+                <div class="ArrangesPrice">
+                    <select class="drArranges">
+                        <option value="0">Sắp sếp theo giá</option>
+                        <option value="1">Tăng dần</option>
+                        <option value="2">Giảm dần</option>
+                    </select>
+                </div>
+                <div class="ArrangesName">
+
+                    <select class="drArranges">
+                        <option value="0">Sắp sếp theo tên</option>
+                        <option value="1">Theo ABC</option>
+                        <option value="2">Theo BC</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="Content_RightProduct">
+
+
+            @Html.Raw(ViewBag.chuoisp)
+             
+
+
+        </div>
+    </div>
+</div>
+<div class="Clear"></div>

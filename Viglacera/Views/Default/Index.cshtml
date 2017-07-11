@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+@*<select class="drArranges" id="drPrice">
+        <option value="0">Sắp sếp theo giá</option>
+        <option value="1">Tăng dần</option>
+        <option value="2">Giảm dần</option>
+    </select>*@
+@{Html.RenderAction("PartialHeader", "Default");}
+<div class="Clear"></div>
+@{Html.RenderAction("PartialCenter_Headder", "Default");}
+
+
+
+<div class="Clear"></div>
+<div class="Clear"></div>
+<div class="Root">
+    <div class="Left">
+        <a href="/" title="rang chủ">  <span class="iCon"></span>Trang chủ /</a>
+    </div>
+    <div class="share">
+        <span>Chia sẻ</span>
+        <a class="share-face" target="_blank" href="@Request.Url.ToString()">&nbsp;</a>
+        <a class="share-mail-2" target="_blank" href="mailto:seabig.vn@gmail.com?Subject=Viglacera Website - Tôi quan tâm tới mục này&amp;body=@Request.Url.ToString()">&nbsp;</a>
+        <a class="share-google" target="_blank" href="https://plus.google.com/share?url=@Request.Url.ToString()">&nbsp;</a>
+    </div>
+</div>
+@{Html.RenderAction("partialquangcao", "Default");}
+
+@{Html.RenderAction("Productdb", "Default");}
+
+
+ 
+<div class="Clear"></div>
+<div id="ListProduct">
+
+    <div id="Left_Product">
+        @{Html.RenderAction("PartialMenuProductAll", "LeftContent");}
+        <div id="box_Download">
+            <a href="" title="">Hướng dẫn sử dụng</a>
+        </div>
+        @{Html.RenderAction("NewHomes", "LeftContent");}
+        @{Html.RenderAction("PartialSupport", "LeftContent");}
+    </div>
+    <div id="Right_Product">
+        @{Html.RenderAction("PartialProductHomes", "Product");}
+    </div>
+</div>
