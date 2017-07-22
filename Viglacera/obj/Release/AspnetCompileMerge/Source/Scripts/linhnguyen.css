@@ -1,0 +1,42 @@
+	
+	.linhnguyen-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background:transparent;
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}	
+	.linhnguyen-modal {
+		visibility: hidden;
+		text-align:center;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		background: #transparent url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+	 
+		}
+		
+	.linhnguyen-modal.small 		{ width: 200px; margin-left: -140px;}
+	.linhnguyen-modal.medium 		{ width: 400px; margin-left: -240px;}
+	.linhnguyen-modal.large 		{ width: 600px; margin-left: -340px;}
+	.linhnguyen-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+	
+	.linhnguyen-modal .close-linhnguyen-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+	.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }

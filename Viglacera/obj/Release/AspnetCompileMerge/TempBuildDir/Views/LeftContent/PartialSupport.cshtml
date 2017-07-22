@@ -1,0 +1,52 @@
+﻿
+@model IEnumerable<Viglacera.Models.tblSupport>
+<div id="Box_Hotline">
+    <a href="" title="">Hotline : <span>@Html.Raw(ViewBag.Hotline)</span></a>
+</div>
+<div id="Supports">
+    <div id="Top_Support"> <span>Hỗ trợ trực tuyến</span></div>
+    <div id="Bottom_Support">
+        @foreach(var item in Model)
+        { 
+             <div class="Tear_Support">
+            <div class="Left">
+                <span class="sp1">@item.Mission :</span>
+                <span class="sp2">@item.Name :</span>
+            </div>
+            <div class="Right">
+                <div class="Yahoo">
+                    <a href="ymsgr:sendim?@item.Yahoo">
+                        <img src="http://opi.yahoo.com/online?u=@item.Yahoo&m=g&t=1" alt="Yahoo" class="imgYahoo" />
+                    </a>
+                </div>
+                <div class="Skype">
+                    <a href="Skype:@item.Skyper?chat"> 
+                        <img class="imgSkyper" src="~/Content/Display/iCon/skype-icon.png" title="@item.Name" alt="Hỗ trợ Skyper">
+                    </a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="Clear"></div>
+</div>
+<div id="Box_Link">
+    <div class="Top_Link">
+        <span>Liên kết website</span>
+    </div>
+    <div class="Bottom_Link">
+        @Html.Raw(ViewBag.url)
+    </div>
+</div>
+<div class="GoogleAdsemse">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8738210846913491"
+         data-ad-slot="5698818364"
+         data-ad-format="auto"></ins>
+    <script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>

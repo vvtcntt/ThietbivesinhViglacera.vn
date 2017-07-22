@@ -1,0 +1,79 @@
+﻿
+@{
+ 
+    Layout = "~/Views/Shared/_LayoutSale.cshtml";
+}
+
+ 
+@model Viglacera.Models.tblProductSale
+<div id="Main">
+    <div id="Banner" style="background:url(@Model.ImageBanner) no-repeat">
+        <div id="Left"></div>
+        <div id="Center">
+            <h1>" @Model.Name "</h1>
+        </div>
+        <div id="Right">
+            <div id="date">
+                <div id="LeftDate">
+                    <span>@String.Format("{0:dd-MM-yyyy}", Model.StartSale) </span>
+                </div>
+                <span class="lh" style="float:left; height:3px; width:3px; margin-top:87px; color:#F00;font-weight:bold; font-size:15px">-</span>
+                <div id="RightDate">
+                    <span>@String.Format("{0:dd-MM-yyyy}", Model.StopSale)</span>
+                </div>
+            </div>
+            <div id="Count">
+                @Html.Raw(ViewBag.ngay)
+            </div>
+            <span class="Dateday">Hôm nay : Ngày @String.Format("{0:dd/MM/yyyy}", DateTime.Now)</span>
+        </div>
+    </div>
+    <div class="Clear"></div>
+    <div id="TestRun">
+        <div class="marquee" id="mycrawler">
+            <span>@Model.TextRun</span>
+        </div>
+
+    </div>
+    <div class="Clear"></div>
+    <div id="Box_ImageSale">
+        <img src="@Model.ImageSale" alt="@Model.Name" />
+    </div>
+    <div class="Clear"></div>
+    <div id="Menu">
+        <div id="Top_Menu">
+            <div id="Left">
+                <span>Danh mục khuyến mại</span>
+            </div>
+            <div id="Right">
+                <ul>
+                    @Html.Raw(ViewBag.chuoimenu)
+                </ul>
+            </div>
+        </div>
+        <div id="Bottom_Menu"></div>
+    </div>
+    <div class="Clear"></div>
+    <div id="Content">
+        <div id="No_Sale">
+            <span>@Model.Slogan</span>
+        </div>
+        <div id="Product_Top1">
+            @Html.Raw(ViewBag.sanphamhot)
+
+        </div>
+        <div id="Product_Top2">
+            @Html.Raw(ViewBag.chuoiProduct)
+            <div class="Clear"></div>
+            <div class="Bannerdongbo">
+
+                <img class="im_spdb" src="~/Content/Display/iCon/muadongbo.png" alt="Sản phẩm đồng bộ" />
+            </div>
+            <div class="Content_Top2">
+                @Html.Raw(ViewBag.hienthichuoi)
+            </div>
+        </div>
+    </div>
+</div>
+
+

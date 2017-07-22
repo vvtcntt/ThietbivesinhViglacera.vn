@@ -1,0 +1,100 @@
+﻿@{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<script src="~/Scripts/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //$("input").keypress(function () {
+        $(document).ready(function () {
+            $('.txtOrd').change(function () {
+                var text = $(this).val();
+                var id = $(this).attr('title');
+                var stt = $(this).attr('id').substr(7);
+                //alert(stt);
+
+                $.post("/Order/UpdatOder", { "id": id, "Ord": text }, function (data) {
+                    // alert(id);
+                    $('#' + stt).html(data.gia);
+                    $("#tt").html(data.tt);
+                    //$(".CoutOrf").append(data.sl);
+                    window.location.href = link;
+
+                })
+            });
+        });
+
+        
+
+    });
+
+</script>
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+
+@Html.Raw(ViewBag.Status)
+@model Viglacera.Models.clsGiohang
+@using (Html.BeginForm("Command", "Order", FormMethod.Post))
+{
+ <div id="MainContent">
+    <div class="Root">
+        <div class="Left">
+            <a href="/" title="trang chu">  <span class="iCon"></span>Trang chủ /</a> <a href="" title="">Giỏ hàng</a> 
+        </div>
+        <div class="share">
+            <span>Chia sẻ</span>
+            <a class="share-face" target="_blank" href="">&nbsp;</a>
+            <a class="share-mail-2" target="_blank" href="mailto:seabig.vn@gmail.com?Subject=Viglacera Website - Tôi quan tâm tới mục này&amp;body=@Request.Url.ToString()">&nbsp;</a>
+            <a class="share-google" target="_blank" href="https://plus.google.com/share?url=@Request.Url.ToString()">&nbsp;</a>
+        </div>
+    </div>
+    <div class="Clear"></div>
+    <div id="Contents">
+        <div id="Orders">
+            <h2>THÔNG TIN ĐƠN HÀNG</h2>
+            @{Html.RenderAction("OrderPartial", "Order");}
+
+
+            <div class="Clear"></div>
+            <p class="Giohang">Danh mục sản phẩm</p>
+            <div id="CheckOrder">
+                <div class="Row_Order">
+                    <div class="Col_Stt">STT</div>
+                    <div class="Col_Name">Tên sản phẩm</div>
+                    <div class="Col_Price">Đơn giá</div>
+                    <div class="Col_Ord">Số lượng</div>
+                    <div class="Col_SumPrice">Thành tiền</div>
+                    <div class="Col_Func">Chức năng</div>
+                </div>
+                @for (int i = 0; i < @Model.CartItem.Count; i++)
+                {
+                    <div class="Row_Order_child">
+                        <div class="Col_Stt">@(i + 1)</div>
+                        <div class="Col_Name"><a href="/1/@Model.CartItem[i].Tag-@Model.CartItem[i].idMenu-@Model.CartItem[i].id .aspx">@Model.CartItem[i].Name</a></div>
+                        <div class="Col_Price">@string.Format("{0:#,#}", @Model.CartItem[i].Price)</div>
+                        <div class="Col_Ord">
+                            <input type="number" id="txtOrd_@(i)" class="txtOrd" name="txtOrd" value="@Model.CartItem[i].Ord" title="@Model.CartItem[i].id" />
+                        </div>
+                        <div class="Col_SumPrice" id="@(i)">@string.Format("{0:#,#}", @Model.CartItem[i].SumPrice)</div>
+                        <div class="Col_Func"><a href="../../Order/DeleteOrder?id=@Model.CartItem[i].id" title="">Xóa</a></div>
+                    </div>
+
+                }
+                 
+
+                <p class="Sums">Tổng tiền : <span id="tt" class="sumPrice">@string.Format("{0:#,#}", @Model.CartTotal) </span> vnđ</p>
+            </div>
+            <div class="rOrders">
+                <p class="Ghichu">Ghi chú(*) : </p>
+                <p class="Ghichu1"> - Sản phẩm mới 100%, đầy đủ phụ kiện đi kèm để lắp thành bộ</p>
+                <p class="Ghichu1"> - Khách hàng khu vực khác vui lòng liên hệ qua hotline để biết phương thức mua hàng, thanh toán, vận chuyển và lắp đặt sản phẩm</p>
+                <p class="Date">Hà Nội, ngày @DateTime.Now.Day tháng @DateTime.Now.Month năm @DateTime.Now.Year</p>
+                <p class="Sign">Hóa đơn từ </p>
+            </div>
+            <div class="Func">
+                <a href="/" title="Quay lại">Tiếp tục mua hàng</a>				                    <button type="submit" id="btnOrder" name="btnOrd">Gửi đơn hàng</button>
+            </div>
+            <div class="Clear"></div>
+        </div>
+    </div>
+    <div class="Clear"></div>
+</div>
+}

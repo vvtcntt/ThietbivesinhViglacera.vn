@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@using PagedList.Mvc;
+@model PagedList.IPagedList<Viglacera.Models.tblNew>
+<div class="Root">
+    <div class="Left">
+        @Html.Raw(ViewBag.nUrl)
+  </div>
+    <div class="share">
+        <span>Chia sẻ</span>
+        <a class="share-face" target="_blank" href="">&nbsp;</a>
+        <a class="share-mail-2" target="_blank" href="mailto:seabig.vn@gmail.com?Subject=Viglacera Website - Tôi quan tâm tới mục này&amp;body=@Request.Url.ToString()">&nbsp;</a>
+        <a class="share-google" target="_blank" href="https://plus.google.com/share?url=@Request.Url.ToString() ">&nbsp;</a>
+    </div>
+</div>
+
+<div class="Clear"></div>
+<div id="ListProduct">
+    <div id="Left_Product">
+        @{Html.RenderAction("PartialNews", "LeftContent");}
+
+
+        @{Html.RenderAction("PartialSupport", "LeftContent");}
+    </div>
+    <div id="Right_Product">
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            <div id="Content_RightProduct">
+
+                <div id="News_Detail">
+                    <div class="nVar_New">
+                        <h1>
+                            @Html.Raw(ViewBag.Name)
+                        </h1>
+                    </div>
+                    <div id="Content_News">
+                        @foreach (var item in Model)
+                        {
+                            <div class="Tear_News">
+                                <a href="/2/@item.Tag-@item.id@Html.Raw(".aspx")" title="@item.Name"><img src="@item.Images" alt="@item.Name" /></a>
+                                <a href="/2/@item.Tag-@item.id@Html.Raw(".aspx")" title="@item.Name" class="Namenews">@item.Name <span>Date : @item.DateCreate</span></a>
+                                <span class="HeadShort"> @item.Description</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+            </div>
+            @Html.PagedListPager(Model, page => Url.Action("ListNews", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+        }
+    </div>
+
+</div>
+<div class="Clear"></div>

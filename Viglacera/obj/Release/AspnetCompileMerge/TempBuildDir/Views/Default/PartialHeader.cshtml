@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Viglacera.Models.tblImage>
+<div id="Headder">
+    <div id="Left_Headder">
+        <a href="/" title="Sản phẩm chính hãng">
+            <img src="~/Content/Display/iCon/icon_spchinhhang.png" alt="Sản phẩm chính hãng" />
+        </a>
+        <a href="#" title="Giá rẻ nhất">
+            <img src="~/Content/Display/iCon/icon_Gia.png" alt="giá rẻ nhất" />
+        </a>
+        <a href="#" title="Vận chuyển miến phí">
+            <img src="~/Content/Display/iCon/icon_vanchuyeen.png" alt="Vận chuyển miễn phí" />
+        </a>
+        <a href="#" title="Giá rẻ hơn cho khach đặt hàng">
+            <img src="~/Content/Display/iCon/icon_Giarehon.png" alt="giá rẻ hơn" />
+
+        </a>
+    </div>
+    <div id="Center_Headder">
+
+        <div id="slideshow">
+            <div class="container">
+                <div class="c_slider" style="background:@Html.Raw(ViewBag.chuoi)"></div>
+                <div class="slider">
+                    @foreach (var item in Model)
+                    {
+                        <figure>
+                            <a href="@item.Url" title="@item.Name"><img src="@item.Images" alt="@item.Name" width="586" height="242" /></a>
+                        </figure>
+                    }
+                </div>
+            </div>
+            <span id="timeline"></span>
+        </div>
+         
+    </div>
+    <div id="Right_Headder">
+        @Html.Raw(ViewBag.chuoivideo)
+    </div>
+</div>

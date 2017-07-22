@@ -1,0 +1,36 @@
+﻿@model Viglacera.Models.tblConfig
+<div id="Banner">
+    <div id="Left_Banner">
+        <a href="/" title="@Model.Name"><img src="@Model.Logo" alt="@Model.Name" /></a>
+    </div>
+    <div id="Center_Banner">
+        <h2>@Model.Name</h2>
+        <div id="box_Search">
+            @using (Html.BeginForm("Search", "Default", FormMethod.Post))
+            {
+                <select id="drMenu" name="drMenu">
+                    <option value="0" selected="selected" style="text-align:right !important; text-indent:10px">  - Chọn tìm kiếm -</option>
+                    <option value="1">Theo tên sản phẩm</option>
+                    <option value="2">Theo mã sản phẩm</option>
+                </select>
+                <input type="text" name="txtSearch" id="txtSearch" class="txtSearch" placeholder="Ví dụ : VI66, Bàn cầu, chậu rửa ...." />
+                <button type="submit" name="btnSearch" id="btnSearch" class="btnSearch"></button>
+            }
+        </div>
+    </div>
+    <div id="Right_Banner">
+        <div id="Top_Right_Banner">
+            <a href="/" title="Trang chủ" rel="nofollow">Trang chủ</a> &iota; <a href="/3/gioi-thieu-12.aspx" title="Giới thiệu" rel="nofollow">Giới thiệu</a>  &iota; <a href="/3/tin-tuc-11.aspx" title="Tin tức" rel="nofollow">Tin tức</a> &iota; <a href="/Lien-he.aspx" title="Liên hệ" rel="nofollow">Liên hệ</a>
+        </div>
+        <div id="Bottom_Right_Banner">
+            @if (Session["soluong"] != "" && Session["soluong"] != null)
+            {
+                <a href="/Order/OrderIndex" class="CountOf"> Có <span>@Session["soluong"].ToString()</span>  Sản phẩm trong giỏ</a>
+            }
+            else
+            {
+                <a href="" class="CountOf"> Có <span>0</span>  Sản phẩm trong giỏ</a>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) {
+	.Tear_News img{ width:80px}
+	
+	}
+@media screen and (max-width: 488px) {
+	
+	.Tear_News img{ width:50px}
+	#News_Detail .DescriptionNews{ width:98%; height:auto; margin:0px auto} 
+	#News_Detail h1{  margin:2px 3px}
+	#News_Detail .Contentnews{ width:98%; height:auto; margin:0px auto} 
+	}

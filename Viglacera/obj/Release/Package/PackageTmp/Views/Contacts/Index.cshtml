@@ -1,0 +1,78 @@
+﻿ 
+
+@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
+@model Viglacera.Models.tblContact
+<div id="MainContent">
+    @using (Html.BeginForm())
+    {@Html.Raw(ViewBag.Lienhe)
+        <div class="Root">
+        <div class="Left">
+            <a href="/" title="trang chu">  <span class="iCon"></span>Trang chủ /</a>  Liên hệ 
+        </div>
+        <div class="share">
+            <span>Chia sẻ</span>
+            <a class="share-face" target="_blank" href="">&nbsp;</a>
+            <a class="share-mail-2" target="_blank" href="mailto:seabig.vn@gmail.com?Subject=Viglacera Website - Tôi quan tâm tới mục này&amp;body=@Request.Url.ToString()">&nbsp;</a>
+            <a class="share-google" target="_blank" href="https://plus.google.com/share?url=@Request.Url.ToString()">&nbsp;</a>
+        </div>
+    </div>
+        <div class="Clear"></div>
+        <div id="Orders">
+            <h2>LIÊN HỆ VÀ HỎI ĐÁP</h2>
+            <div class="rOrder">
+                <div class="Left"><span>Họ và Tên :</span></div>
+                <div class="Right">
+                    @Html.TextBoxFor(p => p.Name, new { @class = "txtName", @required = "required", @autofocus = "autofocus" })
+
+                </div>
+            </div>
+            <div class="rOrder">
+                <div class="Left"><span>Địa chỉ :</span></div>
+                <div class="Right">
+                    @Html.TextBoxFor(p => p.Address, new { @class = "txtAddress", @required = "required", @autofocus = "autofocus" })
+
+                </div>
+            </div>
+
+            <div class="rOrder">
+                <div class="Left"><span>Điện thoại :</span></div>
+                <div class="Right">
+                    @Html.TextBoxFor(p => p.Mobile, new { @class = "txtMobile", @required = "required", @autofocus = "autofocus" })
+
+                </div>
+            </div>
+            <div class="rOrder">
+                <div class="Left"><span>Email :</span></div>
+                <div class="Right">
+
+                    @Html.TextBoxFor(p => p.Email, new { @class = "txtEmail", @required = "required", @autofocus = "autofocus" })
+
+                </div>
+            </div>
+            <div class="rOrder">
+                <div class="Left"><span>Nội dung :</span></div>
+                <div class="Right">
+                    @Html.TextBoxFor(p => p.Content, new { @class = "txtDescription", @required = "required", @autofocus = "autofocus" })
+
+                </div>
+            </div>
+            <div class="rOrders">
+                <p class="Ghichu">Ghi chú(*) : </p>
+                <p class="Ghichu1">- Bạn phải ghi đầy đủ họ tên, địa chỉ, số điện thoại, email, nội dung . Như vậy thông tin bạn gửi mới hơp lệ và được hồi đáp </p>
+                <p class="Ghichu1">- Thời gian hồi đáp có thể ngay sau 15 phút tính từ thời điểm bạn gửi hoặc lâu hơn. Nếu quá 24h mà bạn chưa được hồi đáp thì có thể liên hệ qua hotline của chúng tôi</p>
+
+                <p class="Date">Hà Nội, ngày 09 tháng 01 năm 2015</p>
+                <p class="Sign">Người gửi liên hệ </p>
+            </div>
+            <div class="Func">
+                <button type="submit" id="btlSendContact" name="btlSendContact" class="btlSendContact">Gửi thông tin</button>
+
+            </div>
+            <div class="Clear"></div>
+        </div>
+    }
+</div>

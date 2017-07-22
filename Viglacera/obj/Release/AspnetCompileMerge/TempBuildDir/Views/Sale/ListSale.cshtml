@@ -1,0 +1,51 @@
+﻿
+@{
+ 
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+ 
+@using PagedList.Mvc;
+@model PagedList.IPagedList<Viglacera.Models.tblProductSale>
+<div class="Root">
+    @Html.Raw(ViewBag.nUrl)
+</div>
+<div class="Clear"></div>
+<div id="News">
+    <h1>Tin tức</h1>
+    <div class="Line_ft"></div>
+    <div id="ContentNews">
+        <div id="LeftNews">
+            @foreach (var item in Model)
+            {
+
+                <div class="Content_Listnew">
+                    <div class="Left">
+                        <a href="/Sale/@item.Tag" title="@item.Name"><img src="@item.ImageThumb" alt="@item.Name" /></a>
+                    </div>
+                    <div class="Right">
+                        <div class="Top">	<a href="/Sale/@item.Tag" title="@item.Name"> @item.Name <span>@item.DateCreate</span></a> </div>
+                        <div class="Buttom">
+
+                            @item.Description
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="Clear"></div>
+            }
+            @Html.PagedListPager(Model, page => Url.Action("ListSale", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+
+
+        </div>
+        @{Html.RenderAction("PartialRightNews", "News");}
+    </div>
+</div>
+<div class="Clear"></div>
+
+
+

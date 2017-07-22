@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 768px) {
+	#Left_TopProduct{ width:48%  !important; margin:0px }
+	#Right_TopProduct{ width:48% !important; margin:0px}
+	}
+@media screen and (max-width: 488px) {
+	
+	#Left_TopProduct{ width:100%  !important; margin:0px }
+	#Right_TopProduct{ width:100% !important; margin:10px 0px !important}
+	 #Footer #Bottom #Contentss #Right{ display:none}
+	 #Footer #Tops .Tear_2s{ margin:0px !important}
+	}

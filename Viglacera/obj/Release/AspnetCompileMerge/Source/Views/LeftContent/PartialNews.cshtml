@@ -1,0 +1,28 @@
+﻿ 
+@model IEnumerable<Viglacera.Models.tblGroupAgency>
+<div id="MenuLeft">
+    <div class="nVar_Menu">
+        <div class="Left_nVar_Menu"></div>
+        <div class="Right_nVar_Menu">
+            <span>Về chúng tôi </span>
+        </div>
+    </div>
+    <div id="Content_MenuLeft">
+        <ul class="ul_n">
+          @Html.Raw(ViewBag.Menu)
+
+            <li class="li_n">
+                <a href="/He-Thong-phan-phoi.aspx" title="Lien hẹ">Hệ thống phân phối</a>
+                <ul class="ul_n1">
+
+                    @foreach(var item in Model)
+                    { 
+                    <li class="li_n1">
+                        <a href="/9/@item.Tag-@item.id@Html.Raw(".aspx")" title="@item.Name">› @item.Name</a>
+                    </li>
+                    }
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

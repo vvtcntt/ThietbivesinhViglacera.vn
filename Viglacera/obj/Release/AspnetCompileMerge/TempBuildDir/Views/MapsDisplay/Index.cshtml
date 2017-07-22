@@ -1,0 +1,67 @@
+﻿ 
+ @{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+<div class="Root">
+    <div class="Left">
+        <a href="/" title="Trang chu" rel="nofollow"><span class="iCon"></span>Trang chủ</a> / Bản đồ
+    </div>
+    <div class="share">
+        <span>Chia sẻ</span>
+        <a class="share-face" target="_blank" href="">&nbsp;</a>
+        <a class="share-mail-2" target="_blank" href="mailto:seabig.vn@gmail.com?Subject=Viglacrera Website - Tôi quan tâm tới mục này&amp;body=@Request.Url.ToString() ">&nbsp;</a>
+        <a class="share-google" target="_blank" href="https://plus.google.com/share?url=@Request.Url.ToString()">&nbsp;</a>
+    </div>
+</div>
+@model Viglacera.Models.tblMap
+<div class="Clear"></div>
+<div id="ListProduct">
+    <div id="Left_Product">
+        @{Html.RenderAction("PartialNews", "LeftContent");}
+        @{Html.RenderAction("PartialSupport", "LeftContent");}
+    </div>
+    <div id="Right_Product">
+
+        <div id="Content_RightProduct">
+            <div id="News_Detail">
+                <h1>@Model.Name</h1>
+                <span class="Date">Viết ngày : @Model.DateCreate</span>
+                <div class="Slution"></div>
+                <div class="DescriptionNews">
+                    @Model.Description
+
+                </div>
+                <div class="Tintuclienquan">
+                    @Html.Raw(ViewBag.chuoinew)
+
+                </div>
+                <div class="Contentnews">
+
+                    @Html.Raw(@Model.Content)
+                </div>
+                <div id="Comment">
+                    <div class="nVar_Comment">
+                        <span>Nhận xét đánh giá </span>
+                    </div>
+                    <div class="Slution">
+                        <div class="Mxh" style="float: left; width: 270px; margin-left: 2px">
+                            <div class="fb-like" data-send="true" data-layout="button_count" data-width="60"
+                                 data-show-faces="true">
+                            </div>
+                          
+                            <div id="g" style="float: left; margin: 7px 5px; height: 15px; width: 20px">
+                                <g:plusone size="medium"></g:plusone>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ContentComment">
+
+                        <div class="fb-comments" data-href="@Request.Url.ToString()" data-num-posts="20" style="width:100%; float:left; margin:0px" width="100%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

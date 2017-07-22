@@ -1,0 +1,84 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) {
+	#Content_Top{ width:100%}
+	#Left_Content_Top{ display:none}
+	#Center_Content_Top #Contacts{ width:100%; text-align:center !important}
+	#Content_Top #Center_Content_Top{ width:100% }
+	  #Center_Content_Top #Support{ display:none}
+	  #Right_Content_Top{ display:none}
+	  #Center_Content_Top #Contacts p{    text-align:center; margin:auto 10px; font-size:12px}
+	  #Center_Content_Top #Contacts p span{ float:none}
+	   #Banner{ width:100%; height:auto}
+	  #Center_Banner{ width:auto; padding:0px; margin:0px auto; float:none}
+	  #Bottom_Right_Banner{ display:none}
+	  #Right_Banner{ width:100%; height:auto; float:left; margin:0px}
+	  #Top_Right_Banner{ text-align:center !important}
+	  #Banner #Left_Banner{ height:auto; margin-left:10px}
+	  #box_Search{ width:auto; margin:2px 0px}
+	#Banner #Left_Banner a img{ margin:2px !important; max-height:70px}
+	#Center_Banner h2{ font-size:27px}
+	#Menu #ContentMenu #ul_1 .li_1 a{ font-size:90%; padding:13px 7px}
+	#Menu #ContentMenu #ul_1 .li_1 a .iConHomes{ margin-top:0px}
+	/*Menu*/
+	#Menu{ width:100% }
+	#Menu #ContentMenu{width:auto}
+	#Menu #ContentMenu #ul_1 .li_1 .ul_2{ width:420px}
+	#Menu #ContentMenu #ul_1 .li_1 .ul_2 .li_2{ width:49%}
+	#Content{ width:100%}
+	#Content #Headder{ margin:0px; overflow:hidden}
+	#Content #Headder #Left_Headder{ display:none}
+	#Right_Headder{ display:none}
+	#Content #Headder #Center_Headder{ width:100%;  float:left; margin:0px 0px}
+	#Adw_Centter img.Adw{ width:32.5%; margin:2px}
+	#Content_Product_Db .Tear_1{ width:31%}
+	#Left_Product{ display:none}
+	#Right_Product{ width:98%; margin:5px; float:left}
+	#Right_Product .nVar_Right_Product{ width:100%}
+	 .Tear_2{ width:23%}
+	 #Footer #Tops #Contents{ width:100%}
+		   #Footer #Tops.Tear_4{ width:165px}
+		   #Footer #Tops .Tear_2s{ float:left; margin-left:15px}
+		   #Footer #Bottom #Contentss{ width:auto}
+		   
+   #Services{ display:none}
+	}
+	
+@media screen and (max-width: 488px) {
+	#Top{display:none}
+	#box_Search{ width:auto; margin:2px auto; float:none; background:url(../iCon/bg_Search_1.png) no-repeat  center center scroll transparent; display:none}
+	 
+	#Banner #Left_Banner{ float:none; margin:2px auto; width:100%}
+	#drMenu{ display:none}
+	#Banner #Left_Banner a img{ margin:2px !important; display:block; margin:0px auto !important}
+	#Center_Banner h2{ font-size:20px; text-align:center}
+	#box_Search{ width:100%; margin:2px auto !important}
+	.txtSearch{ width:226px}
+	#Menu{ display:none} 
+	.dropdown{ float:none; margin:10px auto; display:block ; border:none; }
+	#Content{ width:100%; height:auto; float:left; margin:0px; overflow:hidden !important; padding:0px}
+		#Content #Headder{ display:none}
+		.Root{margin-bottom: 5px}
+		.Root .Left a{ line-height:15px}
+		.share{ display:none}
+			 #Contents #LeftContent{ display:none}
+			 #Adw_Centter img.Adw{ display:none}
+			 #Content_Product_Db{ overflow:hidden; margin:0; padding:0; float:left}
+			 #Content_Product_Db .Tear_1{ width:90%; margin:2px auto; overflow:hidden !important; float:none; padding:0px}
+			#Content_Product_Db .Tear_1 .img_thumb{ overflow:hidden; position:relative}
+			 #Content_Product_Db .Tear_1 .img_thumb a img{ width:100%; margin:0px; padding:0px;  }
+			 .Right_RightProduct{ display:none}
+			  #Footer #Tops .Tear_2s{ width:100%; margin-left:0px; padding:0px; margin:0px !important}
+		   #Footer #Tops .Tear_4{ display:none}
+		   #Footer #Tops .Tear_2s h4{ text-align:center}
+		     #Footer #Tops .Tear_3 h4{ text-align:center}
+		   #Footer #Tops .Tear_3{ width:100%; margin:0px !important; padding:0px; overflow:hidden; display:none}
+ 		 .Tear_2{ width:47%; height:auto; margin:2px}
+		 #Footer #Tops #Contents{ width:100%}
+		   #Footer #Tops .Tear_4{ width:165px}
+ 		   #Footer #Bottom #Contentss{ width:auto}
+		   #Footer #Tops .Tear_4 a{ color:#999999; font-size:12px; margin:5px 3px; display:block}
+		   .Tear_2 .PriceSale{ font-size:11px}
+		   #page{ display:block !important}
+ 		  }

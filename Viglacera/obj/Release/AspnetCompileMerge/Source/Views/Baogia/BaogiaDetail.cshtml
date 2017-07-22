@@ -1,0 +1,61 @@
+﻿@{
+     Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+@using PagedList.Mvc;
+@model PagedList.IPagedList<Viglacera.Models.tblProduct>
+ <div id="Content">
+    <div class="Nvar_Product">
+   @Html.Raw(ViewBag.nUrl)
+    </div>
+    <div id="Content_Product">
+        <div class="nVar_ListNews">
+            <div class="Left_nVar_ListNews"></div>
+            <div class="Center_nVar_ListNews">
+                <span>@Html.Raw(ViewBag.Name)</span>
+            </div>
+            <div class="Right_nVar_ListNews"></div>
+        </div>
+        <div id="Baogia">
+            <div id="Head_Top">
+@Html.Raw(ViewBag.Logo)                <div id="Right_Head">
+                    @Html.Raw(ViewBag.chuoiconfig)
+                </div>
+                <div class="Clear"></div>
+            </div>
+            <div class="line_bg"></div>
+            <div id="Content_Baogia">
+                <h1>@Html.Raw(ViewBag.Name)</h1>
+                @Html.Raw(ViewBag.Date)
+                <span class="kg"> @Html.Raw(ViewBag.Des)</span>
+
+                <table border="0" id="Tableb">
+                    <tbody>
+                        <tr class="Head_tb">
+                            <td class="Ord">STT</td>
+                            <td class="Name">Tên sản phẩm</td>
+                            <td class="Code">Mã SP</td>
+                            <td class="Price1">Đơn giá</td>
+                            <td class="Quality">SL</td>
+                            <td class="SumPrice">Thành tiền</td>
+                            <td class="Image">Hình ảnh</td>
+                        </tr>
+@Html.Raw(ViewBag.chuoi)               
+ 
+
+                    </tbody> 
+
+
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("BaogiaDetail", new { page = page, sortOrder = ViewBag.CurrentSortOrder, sortName = ViewBag.CurrentSortName, sortLevel = ViewBag.CurrentSortLevel }), (PagedListRenderOptions)ViewBag.ship)
+
+
+                <span class="ghichu_bg">* Ghi chú</span>
+                <span class="ghichu1">- Khách hàng vui lòng liên hệ qua hotline để biết phương thức vận chuyển và giao hàng của chúng tôi ! </span>
+                 <span class="ghichu1">- Bảng báo giá trên có giá trị trong tháng @DateTime.Now.Day năm 2016. Giá có thể thay đổi mà không báo trước. Khách lấy nhiều vui lòng liên hệ để nhận báo giá tốt hơn !</span>
+                @Html.Raw(ViewBag.Content)
+                <div class="Clear"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

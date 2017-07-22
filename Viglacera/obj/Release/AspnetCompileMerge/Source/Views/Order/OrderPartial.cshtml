@@ -1,0 +1,49 @@
+﻿@model Viglacera.Models.tblOrder
+<div class="rOrder">
+    <div class="Left"><span>Họ và Tên :</span></div>
+    <div class="Right">
+        @Html.TextBoxFor(p => p.Name, new { @class = "txtName", @required = "required", @autofocus = "autofocus" })
+        @* <input type="text" name="txtName" class="txtName" id="txtName" required="required" autofocus="autofocus" />*@
+    </div>
+</div>
+<div class="rOrder">
+    <div class="Left"><span>Địa chỉ :</span></div>
+    <div class="Right">
+        @Html.TextBoxFor(p => p.Address, new { @class = "txtAddress", @required = "required", @autofocus = "autofocus" })
+        @*<input type="text" name="txtAddress" class="txtAddress" id="txtAddress" required="required" autofocus="autofocus" />*@
+    </div>
+</div>
+<div class="rOrder">
+    <div class="Left"><span>Thời gian giao hàng :</span></div>
+    <div class="Right">
+        @Html.TextBoxFor(p => p.DateByy, new { @class = "txtDate", @required = "required", @autofocus = "autofocus", @Value = DateTime.Now.ToShortDateString() })
+        @*<input type="text" name="txtDate" class="txtDate" id="txtDate" required="required" autofocus="autofocus"  />*@
+        <script>
+            $(function () {
+                $("#DateByy").datepicker();
+            });
+        </script>
+    </div>
+</div>
+<div class="rOrder">
+    <div class="Left"><span>Điện thoại :</span></div>
+    <div class="Right">
+        @Html.TextBoxFor(p => p.Mobile, new { @class = "txtMobile", @required = "required", @autofocus = "autofocus", type = "number" })
+        @*<input type="text" name="txtMobile" class="txtMobile" id="txtMobile" required="required" autofocus="autofocus" />*@
+    </div>
+</div>
+<div class="rOrder">
+    <div class="Left"><span>Email :</span></div>
+    <div class="Right">
+
+        @Html.TextBoxFor(p => p.Email, new { @class = "txtEmail", @required = "required", @autofocus = "autofocus" })
+        @*<input type="text" name="txtEmail" class="txtEmail" id="txtEmail" required="required" autofocus="autofocus" />*@
+    </div>
+</div>
+<div class="rOrder">
+    <div class="Left"><span>Lời chú thích :</span></div>
+    <div class="Right">
+        @Html.TextBoxFor(p => p.Description, new { @class = "txtDescription", @required = "required", @autofocus = "autofocus" })
+        @*<input type="text" name="txtDescription" class="txtDescription" id="txtDescription" required="required" autofocus="autofocus" />*@
+    </div>
+</div>
