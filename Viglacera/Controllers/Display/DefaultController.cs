@@ -99,29 +99,10 @@ namespace Viglacera.Controllers.Display
         {
             tblConfig tblconfig = db.tblConfigs.First();
             int Date1 = int.Parse(DateTime.Now.Hour.ToString());
-            if (Date1 > 0 && Date1 < 7)
-            {
-                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> : Vui lòng chờ đến 7h30 sáng. Thời gian làm việc từ 7h30-18h hàng ngày</p> ";
-
-            }
-            else if (Date1 >= 7 && Date1 < 19)
-            {
-
-                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> : " + tblconfig.MobileIN + "</p> <p><span class=\"icon_Hotline\"></span> : " + tblconfig.HotlineIN + "</p>";
-            }
-
-
-            else if (Date1 >= 19 && Date1 < 22)
-            {
-                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> : " + tblconfig.MobileOUT + "</p> <p><span class=\"icon_Hotline\"></span> : " + tblconfig.HotlineOUT + "</p>";
-
-            }
-            else if (Date1 >= 22 && Date1 < 25)
-            {
-                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> :Hết giờ làm việc.Thời gian làm việc từ 7h30-18h hàng ngày</p> ";
-            }
             
-             
+
+                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> : " + tblconfig.MobileIN + "</p> <p><span class=\"icon_Hotline\"></span> : Hotline : " + tblconfig.HotlineIN + " - Tổng đài bán hàng : "+tblconfig.HotlineOUT+"</p>";
+           
             var ListSupport = db.tblSupports.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
             StringBuilder Yahoo = new StringBuilder();
             StringBuilder Skype = new StringBuilder();

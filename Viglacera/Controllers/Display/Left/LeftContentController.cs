@@ -61,28 +61,11 @@ namespace Viglacera.Controllers.Display.Left
             tblConfig tblconfig = db.tblConfigs.First();
             DateTime dates = DateTime.Now;
             int Date1 = int.Parse(dates.Hour.ToString());
-            if (Date1 > 0 && Date1 < 7)
-            {
-                ViewBag.Hotline = "<span style=\"font-size:13px;font-weight:normal\">Chưa làm việc !</span>";
-
-            }
-            else if (Date1 >= 7 && Date1 < 19)
-            {
-
+             
                 ViewBag.Hotline = tblconfig.HotlineIN;
-            }
+            ViewBag.HotlineOUT = tblconfig.HotlineOUT;
+            ViewBag.MobileOUT = tblconfig.MobileOUT;
 
-
-            else if (Date1 >= 19 && Date1 < 22)
-            {
-                ViewBag.Hotline = tblconfig.HotlineOUT;
-
-            }
-            else if (Date1 >= 22 && Date1 < 24)
-            {
-                ViewBag.Hotline = "<span style=\"font-size:13px;font-weight:normal\">Hết giờ làm việc !</span>";
-
-            }
             var listlnk = db.tblUrls.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
             StringBuilder chuoi = new StringBuilder();
             for (int i = 0; i < listlnk.Count;i++ )

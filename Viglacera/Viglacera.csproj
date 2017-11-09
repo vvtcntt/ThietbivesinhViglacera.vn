@@ -230,6 +230,7 @@
     <Compile Include="Controllers\Admin\Product\ProductSaleadController.cs" />
     <Compile Include="Controllers\Admin\Product\ProductSYNadController.cs" />
     <Compile Include="Controllers\Admin\Role\ModuleController.cs" />
+    <Compile Include="Controllers\Admin\support\supportController.cs" />
     <Compile Include="Controllers\Admin\Url\UrladController.cs" />
     <Compile Include="Controllers\Admin\User\UsersController.cs" />
     <Compile Include="Controllers\Admin\WebSites\WebController.cs" />
@@ -1766,6 +1767,9 @@
     <Content Include="Views\Partnerad\Create.cshtml" />
     <Content Include="Views\Partnerad\Edit.cshtml" />
     <Content Include="Views\Partnerad\Index.cshtml" />
+    <Content Include="Views\support\Create.cshtml" />
+    <Content Include="Views\support\Edit.cshtml" />
+    <Content Include="Views\support\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

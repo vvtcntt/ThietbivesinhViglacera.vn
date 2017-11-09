@@ -256,7 +256,7 @@
                                 </tr>
                                 <tr>
                                     <td class="key">
-                                        Hotline ngoài giờ <span class="Required">*</span>
+                                        Tổng đài bán hàng <span class="Required">*</span>
                                     </td>
                                     <td>
                                         @Html.TextBoxFor(p => p.HotlineOUT, new { @class = "Name_ad Price_ad", @autofocus = "autofocus" })
@@ -264,10 +264,30 @@
                                         <span class="tooltip-help">
                                             <span class="tooltipContent">
                                                 <p class="tooltiptitle">
-                                                    Hotline ngoài giờ hành chính
+                                                    Tổng đài bán hàng
                                                 </p>
                                                 <p class="tooltipmessage">
-                                                    Hotline ngoài giờ hành chính vào buổi tối
+                                                    Tổng đài bán hàng
+                                                </p>
+                                            </span>
+                                        </span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key">
+                                        Tổng đài bảo hành<span class="Required">*</span>
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(p => p.MobileOUT, new { @class = "Name_ad Price_ad", @autofocus = "autofocus" })
+
+                                        <span class="tooltip-help">
+                                            <span class="tooltipContent">
+                                                <p class="tooltiptitle">
+                                                    Tổng đài bảo hành
+                                                </p>
+                                                <p class="tooltipmessage">
+                                                    Tổng đài bảo hành
                                                 </p>
                                             </span>
                                         </span>
@@ -294,26 +314,7 @@
 
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="key">
-                                        Điện thoại bàn ngoài giờ <span class="Required">*</span>
-                                    </td>
-                                    <td>
-                                        @Html.TextBoxFor(p => p.MobileOUT, new { @class = "Name_ad ", @autofocus = "autofocus" })
-
-                                        <span class="tooltip-help">
-                                            <span class="tooltipContent">
-                                                <p class="tooltiptitle">
-                                                    Điện thoại bàn ngoài giờ hành chính
-                                                </p>
-                                                <p class="tooltipmessage">
-                                                    Đây là số điện thoại bàn hỗ trợ ngoài giờ hành chính
-                                                </p>
-                                            </span>
-                                        </span>
-
-                                    </td>
-                                </tr>
+                                 
                                 <tr>
                                     <td class="key">
                                         Email <span class="Required">*</span>

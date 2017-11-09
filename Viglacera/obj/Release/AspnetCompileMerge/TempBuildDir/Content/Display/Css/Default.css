@@ -23,7 +23,7 @@ src:url(../Font/UTMCafeta.ttf)
 #Content_Top{ width:1100px; height:100%;margin:0px auto}
 #Content_Top #Left_Content_Top{ width:73px; height:100%; float:left; margin:0px; background:url(../iCon/bg_Top_Right.png) no-repeat transparent}
 #Content_Top #Center_Content_Top{ width:954px; height:100%; float:left; margin:0px; background:url(../iCon/bg_Top.png) repeat-x left scroll transparent;  color:#FFF}
- #Center_Content_Top #Contacts { width:70%; height:100%; float:left; margin:0px; font-size:14px;line-height:40px;}
+ #Center_Content_Top #Contacts { width:auto; height:100%; float:left; margin:0px; font-size:14px;line-height:40px;}
   #Center_Content_Top #Contacts p{ margin:0px 12px 0px 5px; float:left}
  #Center_Content_Top #Contacts span.icon_Phone{ margin: 12px 10px 12px 5px; display:block; float:left; width:22px; height:14px; background:url(../iCon/icon_Phone.png) no-repeat transparent  }
  #Center_Content_Top #Contacts .icon_Hotline{ margin: 12px 10px 12px 5px; display:block;   width:9px; height:14px; background:url(../iCon/icon_Mobile.png) no-repeat transparent; float:left ; color:#fff600 }
@@ -393,8 +393,8 @@ background-position: 0px -488px;
 height: 49px;
 line-height: 49px;
 }
- #Box_Hotline{ width:100%; height:50px; float:left; margin:5px 0px;border: 1px solid #F2E7D2;}
- #Box_Hotline a{
+.Box_Hotline{ width:100%; height:50px; float:left; margin:5px 0px;border: 1px solid #F2E7D2;}
+.Box_Hotline a{
 	height: 49px;
 	line-height: 49px;;
 	color: #393939;
@@ -403,7 +403,7 @@ line-height: 49px;
 	padding-left: 58px; 
 	background:url(../iCon/icon.png) no-repeat scroll 0px -535px #fef3df
 }
-  #Box_Hotline a span{ font-size:16px; font-weight:bold; color:#fa8e00}
+.Box_Hotline a span{ font-size:16px; font-weight:bold; color:#fa8e00}
  #Supports { width:100%; height:auto; float:left; margin:5px 0px; background:#fef3df;border: 1px solid #F2E7D2;}
  #Supports #Top_Support{ width:100%; height:40px; background:url(../iCon/icon.png) no-repeat scroll 0px -582px; float:left}
  #Supports #Top_Support span{ line-height:40px; margin:auto 5px auto 58px; color:#393939}
@@ -571,3 +571,13 @@ background:url(../iCon/icon.png) no-repeat scroll 0px -255px transparent}
 .xemthem a{font-size:12px; color:#f00; margin:5px;   padding:5px 7px; border:1px solid #F00 }
 #Lienket{width:100%; height:auto; float:left; margin:0px;font-size:5px; color:#eeeeee}
 #Lienket a{font-size:5px; color:#eeeeee; margin:0px; display:inline-block}
+
+.Tear_Supports{ width:100%; height:auto; float:left; margin:5px 0px; background:url(../iCon/line-1.png) no-repeat center bottom scroll transparent; padding-bottom:10px}
+.Tear_Supports .Left_Tear_Support{ width:50%; height:auto; float:left; margin:0px}
+.Tear_Supports .Left_Tear_Support .htv1{ color:#393939; margin:8px 5px; text-align:right; display:block}
+.Tear_Supports .Left_Tear_Support .htv2{ color:#ff3600; margin:5px; text-align:right; display:block}
+.Tear_Supports .Right_Tear_Support{ width:50%; height:auto; float:left; margin:0px}
+.Tear_Supports .Right_Tear_Support .imgYahoo{ width:auto; height:auto; float:left; margin:5px 5px 2px 5px; display:block}
+.Tear_Supports .Right_Tear_Support .imgSkype{ width:76px; height:auto; float:left; margin:0px 3px; display:block}
+.Tear_Supports .Right_Tear_Support .topTearSupport{width:100%; height:auto; float:left; margin:0px; text-align:center}
+.Tear_Supports .Right_Tear_Support .topTearSupport a img{width:46%; height:22px; margin:0px auto}

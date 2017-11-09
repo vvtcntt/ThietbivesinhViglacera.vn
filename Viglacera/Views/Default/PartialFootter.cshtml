@@ -4,30 +4,9 @@
         <div class="Tear_2s">
             <h4>Trụ sở chính</h4>
             <span class="Name_Company">@Model.Name</span>
-            <span class="Address_Company">Địa chỉ : @Model.Address</span>
-
-
-            @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-            {
-                <span class="Mobile_Company" style="text-decoration:blink; color:#ff6a00">Điện thoại : Vui lòng quay lại website vào 7h30 sáng. Thời gian làm việc từ 7h30-18h hàng ngày</span>
-
-            }
-            else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-            {
-
-                <span class="Mobile_Company">Điện thoại :@Model.MobileIN - Hotline : @Model.HotlineIN</span>
-            }
-
-
-            else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
-            {
-                <span class="Mobile_Company">Điện thoại : @Model.MobileOUT - Hotline :@Model.HotlineOUT</span>
-
-            }
-            else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-            {
-                <span class="Mobile_Company" style="text-decoration:blink; color:#ff6a00">Điện thoại : Hết giờ làm việc.Thời gian làm việc từ 7h30-18h hàng ngày</span>
-            }
+            <span class="Address_Company">Địa chỉ : @Model.Address</span> 
+             <span class="Mobile_Company">Điện thoại :@Model.MobileIN - Hotline : @Model.HotlineIN</span>  
+            <span class="Mobile_Company">Tổng đài bán hàng :@Model.HotlineOUT - Bảo hành : @Model.MobileOUT</span>            
             <span class="Email_Company">Email : @Model.Email</span>
             @Html.Raw(ViewBag.chuoipartner)
 
@@ -51,30 +30,16 @@
         </div>
         <div class="Tear_3">
             <h4>Hỗ trợ khách hàng</h4>
-            <div id="Box_Hotline">
-                
-                    @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-                    {
-                        <a href="#" title="thời gian làm"><span style="font-size: 13px; font-weight: normal">Chưa làm việc</span></a>
-
-                    }
-                    else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-                    {
-
-                        <a href="#" title="giờ hành chính"><span  >@Model.HotlineIN</span></a>
-                    }
-
-
-                    else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
-                    {
-                       <a href="#" title="ngoià giờ hành chính"> <span>@Model.HotlineOUT</span></a>
-
-                    }
-                    else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-                    {
-                       <a href="#" title="Hết giờ"><span style="font-size: 13px; font-weight: normal">Hết giờ làm việc</span></a>
-                    }
-                 
+            <div class="Box_Hotline">  
+                <a href="#" title="giờ hành chính"><span  >@Model.HotlineIN</span></a>
+            </div>
+            <h4>Tổng đài bán hàng</h4>
+            <div class="Box_Hotline">
+                <a href="#" title="giờ hành chính"><span>@Model.HotlineOUT</span></a>
+            </div>
+            <h4>Tổng đài bảo hành</h4>
+            <div class="Box_Hotline">
+                <a href="#" title="giờ hành chính"><span>@Model.MobileOUT</span></a>
             </div>
             <div class="Clear"></div>
             <h4 style="margin-top:3px">Bản đồ chỉ đường</h4>
@@ -83,7 +48,7 @@
 
             </div>
             <div id="Lienket">
-                <a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước">Thay lõi lọc nước</a> hay <a href="http://Binhnonglanh.top" title="Bình nóng lạnh">Bình nóng lạnh</a>  hay các sản phẩm <a href="http://Viglacerahanoi.com" title="Thiết bị vệ sinh Viglacera">Thiết bị vệ sinh Viglacera</a> chính hãng giá rẻ với  <a href="http://viglacerahanoi.com/bon-cau-viglacera" title="Bồn cầu Viglacera">Bồn cầu Viglacera</a> giá rẻ nhất. Bạn có thể mua <a href="http://Loiloc.com" title="Lõi lọc nước">Lõi lọc nước</a>
+                <a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước">Thay lõi lọc nước</a> hay <a href="http://Binhnonglanh.top" title="Bình nóng lạnh">Bình nóng lạnh</a>  hay các sản phẩm <a href="http://viglaceravietnam.com" title="Thiết bị vệ sinh Viglacera">Thiết bị vệ sinh Viglacera</a> chính hãng giá rẻ với  <a href="http://viglaceravietnam.com/bon-cau-viglacera" title="Bồn cầu Viglacera">Bồn cầu Viglacera</a> giá rẻ nhất. Bạn có thể mua <a href="http://Loiloc.com" title="Lõi lọc nước">Lõi lọc nước</a>
             </div>
         </div>
         <div class="Clear"></div>
