@@ -225,10 +225,7 @@ namespace Viglacera.Controllers.Display
         }
         public PartialViewResult PartialFootter()
         {
-            tblConfig tblconfig = db.tblConfigs.First();
-
-            
-
+            tblConfig tblconfig = db.tblConfigs.First();   
              StringBuilder chuoipartner = new StringBuilder();
             var listPartner = db.tblPartners.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
             for (int i = 0; i < listPartner.Count;i++ )
