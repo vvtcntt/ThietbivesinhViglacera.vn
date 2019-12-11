@@ -6,22 +6,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>E:\PublicWeb\Thietbivesinhviglacera</_PublishTargetUrl>
+    <_PublishTargetUrl>E:\PublicWeb\thietbivesinhviglacera.vn</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>08/26/2017 22:40:08</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>11/15/2017 10:50:06</publishTime>
+      <publishTime>12/11/2019 22:16:11</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>11/15/2017 10:50:06</publishTime>
+      <publishTime>12/11/2019 22:16:11</publishTime>
     </File>
     <File Include="bin/CKEditor.NET.dll">
       <publishTime>08/26/2017 22:39:04</publishTime>
     </File>
+    <File Include="bin/CKEditor.NET.pdb">
+      <publishTime>08/26/2017 22:39:04</publishTime>
+    </File>
     <File Include="bin/CKFinder.dll">
+      <publishTime>08/26/2017 22:39:04</publishTime>
+    </File>
+    <File Include="bin/CKFinder.pdb">
       <publishTime>08/26/2017 22:39:04</publishTime>
     </File>
     <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
@@ -76,6 +82,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:40:06</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>08/26/2017 22:40:03</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.pdb">
       <publishTime>08/26/2017 22:40:03</publishTime>
     </File>
     <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
@@ -139,13 +148,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:40:06</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
-      <publishTime>07/10/2013 01:04:48</publishTime>
+      <publishTime>07/10/2012 12:07:38</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>08/26/2017 22:40:03</publishTime>
     </File>
     <File Include="bin/System.Net.Http.WebRequest.dll">
-      <publishTime>07/10/2013 01:04:48</publishTime>
+      <publishTime>07/10/2012 12:07:38</publishTime>
     </File>
     <File Include="bin/System.Spatial.dll">
       <publishTime>08/26/2017 22:40:06</publishTime>
@@ -181,7 +190,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:40:04</publishTime>
     </File>
     <File Include="bin/Viglacera.dll">
-      <publishTime>11/15/2017 10:49:43</publishTime>
+      <publishTime>12/11/2019 22:16:02</publishTime>
+    </File>
+    <File Include="bin/Viglacera.pdb">
+      <publishTime>12/11/2019 22:16:02</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>08/26/2017 22:40:08</publishTime>
@@ -1527,7 +1539,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckfinder/bin/Debug/CKEditor.NET.dll">
       <publishTime>08/26/2017 22:39:04</publishTime>
     </File>
+    <File Include="Content/ckfinder/bin/Debug/CKEditor.NET.pdb">
+      <publishTime>08/26/2017 22:39:04</publishTime>
+    </File>
     <File Include="Content/ckfinder/bin/Debug/CKFinder.dll">
+      <publishTime>08/26/2017 22:39:04</publishTime>
+    </File>
+    <File Include="Content/ckfinder/bin/Debug/CKFinder.pdb">
       <publishTime>08/26/2017 22:39:04</publishTime>
     </File>
     <File Include="Content/ckfinder/bin/Release/CKFinder.dll">
@@ -2637,7 +2655,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckfinder/plugins/fileeditor/bin/Debug/CKFinder_FileEditor.dll">
       <publishTime>08/26/2017 22:39:07</publishTime>
     </File>
+    <File Include="Content/ckfinder/plugins/fileeditor/bin/Debug/CKFinder_FileEditor.pdb">
+      <publishTime>08/26/2017 22:39:07</publishTime>
+    </File>
     <File Include="Content/ckfinder/plugins/fileeditor/bin/Release/CKFinder_FileEditor.dll">
+      <publishTime>08/26/2017 22:39:07</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/fileeditor/bin/Release/CKFinder_FileEditor.pdb">
       <publishTime>08/26/2017 22:39:07</publishTime>
     </File>
     <File Include="Content/ckfinder/plugins/fileeditor/codemirror/addon/mode/overlay.js">
@@ -2754,7 +2778,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckfinder/plugins/imageresize/bin/Debug/CKFinder_ImageResize.dll">
       <publishTime>08/26/2017 22:39:08</publishTime>
     </File>
+    <File Include="Content/ckfinder/plugins/imageresize/bin/Debug/CKFinder_ImageResize.pdb">
+      <publishTime>08/26/2017 22:39:08</publishTime>
+    </File>
     <File Include="Content/ckfinder/plugins/imageresize/bin/Release/CKFinder_ImageResize.dll">
+      <publishTime>08/26/2017 22:39:08</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/imageresize/bin/Release/CKFinder_ImageResize.pdb">
       <publishTime>08/26/2017 22:39:08</publishTime>
     </File>
     <File Include="Content/ckfinder/plugins/imageresize/images/mini.gif">
@@ -2766,7 +2796,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/ckfinder/plugins/watermark/bin/Debug/CKFinder_Watermark.dll">
       <publishTime>08/26/2017 22:39:08</publishTime>
     </File>
+    <File Include="Content/ckfinder/plugins/watermark/bin/Debug/CKFinder_Watermark.pdb">
+      <publishTime>08/26/2017 22:39:08</publishTime>
+    </File>
     <File Include="Content/ckfinder/plugins/watermark/bin/Release/CKFinder_Watermark.dll">
+      <publishTime>08/26/2017 22:39:08</publishTime>
+    </File>
+    <File Include="Content/ckfinder/plugins/watermark/bin/Release/CKFinder_Watermark.pdb">
       <publishTime>08/26/2017 22:39:08</publishTime>
     </File>
     <File Include="Content/ckfinder/plugins/watermark/logo.gif">
@@ -3280,7 +3316,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:38:58</publishTime>
     </File>
     <File Include="Content/Display/Css/Default.css">
-      <publishTime>11/09/2017 10:29:40</publishTime>
+      <publishTime>11/25/2019 11:40:19</publishTime>
     </File>
     <File Include="Content/Display/Css/Default_Res.css">
       <publishTime>08/26/2017 22:38:58</publishTime>
@@ -3320,6 +3356,27 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/Css/style.css">
       <publishTime>08/26/2017 22:38:58</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/call.css">
+      <publishTime>11/15/2019 22:07:50</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/owl.carousel.min.css">
+      <publishTime>11/15/2019 22:07:50</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/owl.theme.default.min.css">
+      <publishTime>11/15/2019 22:07:50</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/Popup_ud.css">
+      <publishTime>11/24/2019 21:09:25</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/product.css">
+      <publishTime>11/25/2019 11:14:26</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/sale.css">
+      <publishTime>11/15/2019 22:07:50</publishTime>
+    </File>
+    <File Include="Content/Display/Css/update/times.css">
+      <publishTime>11/15/2019 22:07:50</publishTime>
     </File>
     <File Include="Content/Display/Default.html">
       <publishTime>08/26/2017 22:38:58</publishTime>
@@ -3516,6 +3573,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Display/iCon/thanhtoannhanhgon1.png">
       <publishTime>08/26/2017 22:38:59</publishTime>
     </File>
+    <File Include="Content/Display/iCon/update/calling.gif">
+      <publishTime>11/15/2019 22:08:09</publishTime>
+    </File>
+    <File Include="Content/Display/iCon/update/hinhtron.png">
+      <publishTime>11/15/2019 22:08:09</publishTime>
+    </File>
+    <File Include="Content/Display/iCon/update/icon-zalo.png">
+      <publishTime>11/24/2019 21:05:41</publishTime>
+    </File>
     <File Include="Content/Display/News.html">
       <publishTime>08/26/2017 22:38:58</publishTime>
     </File>
@@ -3539,6 +3605,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/Display/Script/jquery.nivo.slider.pack.js">
       <publishTime>08/26/2017 22:38:59</publishTime>
+    </File>
+    <File Include="Content/Display/Script/update/jquery.popupMiendatweb.min.js">
+      <publishTime>11/15/2019 22:08:27</publishTime>
+    </File>
+    <File Include="Content/Display/Script/update/owl.carousel.min.js">
+      <publishTime>11/15/2019 22:08:27</publishTime>
+    </File>
+    <File Include="Content/Display/Script/update/script.js">
+      <publishTime>11/15/2019 22:08:27</publishTime>
     </File>
     <File Include="Content/PagedList.css">
       <publishTime>08/26/2017 22:38:59</publishTime>
@@ -3754,7 +3829,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:40:01</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>11/15/2017 10:50:01</publishTime>
+      <publishTime>12/11/2019 22:16:05</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>08/26/2017 22:39:10</publishTime>
@@ -3952,7 +4027,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:13</publishTime>
     </File>
     <File Include="Views/Config/Index.cshtml">
-      <publishTime>11/09/2017 09:51:58</publishTime>
+      <publishTime>12/11/2019 21:09:47</publishTime>
     </File>
     <File Include="Views/Contacts/Index.cshtml">
       <publishTime>08/26/2017 22:39:13</publishTime>
@@ -3969,6 +4044,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Criteria/partialCriteria.cshtml">
       <publishTime>08/26/2017 22:39:13</publishTime>
     </File>
+    <File Include="Views/Default/callPartial.cshtml">
+      <publishTime>11/24/2019 22:43:12</publishTime>
+    </File>
     <File Include="Views/Default/Index.cshtml">
       <publishTime>08/26/2017 22:39:13</publishTime>
     </File>
@@ -3979,13 +4057,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:13</publishTime>
     </File>
     <File Include="Views/Default/PartialFootter.cshtml">
-      <publishTime>11/15/2017 10:49:29</publishTime>
+      <publishTime>11/25/2019 11:13:41</publishTime>
     </File>
     <File Include="Views/Default/PartialHeader.cshtml">
       <publishTime>08/26/2017 22:39:13</publishTime>
     </File>
     <File Include="Views/Default/PartialMenu.cshtml">
-      <publishTime>08/26/2017 22:39:13</publishTime>
+      <publishTime>11/29/2019 22:39:11</publishTime>
     </File>
     <File Include="Views/Default/PartialMenuMobile.cshtml">
       <publishTime>08/26/2017 22:39:13</publishTime>
@@ -3997,7 +4075,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/09/2017 10:11:26</publishTime>
     </File>
     <File Include="Views/Default/Productdb.cshtml">
-      <publishTime>08/26/2017 22:39:13</publishTime>
+      <publishTime>11/29/2019 23:13:17</publishTime>
     </File>
     <File Include="Views/Errors/NotFound.cshtml">
       <publishTime>08/26/2017 22:39:13</publishTime>
@@ -4111,7 +4189,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:14</publishTime>
     </File>
     <File Include="Views/LeftContent/PartialSupport.cshtml">
-      <publishTime>11/15/2017 10:48:03</publishTime>
+      <publishTime>03/02/2019 16:12:18</publishTime>
     </File>
     <File Include="Views/Login/LoginIndex.cshtml">
       <publishTime>08/26/2017 22:39:14</publishTime>
@@ -4153,7 +4231,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:14</publishTime>
     </File>
     <File Include="Views/News/NewsDetail.cshtml">
-      <publishTime>08/26/2017 22:39:14</publishTime>
+      <publishTime>08/13/2018 15:45:08</publishTime>
     </File>
     <File Include="Views/Newsad/Create.cshtml">
       <publishTime>08/26/2017 22:39:14</publishTime>
@@ -4206,6 +4284,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Partnerad/Index.cshtml">
       <publishTime>08/26/2017 22:39:14</publishTime>
     </File>
+    <File Include="Views/Product/detail.cshtml">
+      <publishTime>12/11/2019 21:10:33</publishTime>
+    </File>
     <File Include="Views/Product/ListProduct.cshtml">
       <publishTime>08/26/2017 22:39:14</publishTime>
     </File>
@@ -4213,7 +4294,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:14</publishTime>
     </File>
     <File Include="Views/Product/ProductDetail.cshtml">
-      <publishTime>08/26/2017 22:51:09</publishTime>
+      <publishTime>08/13/2018 15:46:35</publishTime>
     </File>
     <File Include="Views/Product/Search.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
@@ -4228,7 +4309,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:15</publishTime>
     </File>
     <File Include="Views/Productad/Index.cshtml">
-      <publishTime>08/26/2017 22:39:15</publishTime>
+      <publishTime>11/24/2019 22:19:03</publishTime>
     </File>
     <File Include="Views/Productad/ListFiles.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
@@ -4237,7 +4318,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:15</publishTime>
     </File>
     <File Include="Views/Productad/PartialProductData.cshtml">
-      <publishTime>08/26/2017 22:39:15</publishTime>
+      <publishTime>11/24/2019 22:22:30</publishTime>
     </File>
     <File Include="Views/Productad/ProductCheck.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
@@ -4259,6 +4340,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/ProductSYNad/Index.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
+    </File>
+    <File Include="Views/ProductSYS/list.cshtml">
+      <publishTime>11/29/2019 23:12:30</publishTime>
+    </File>
+    <File Include="Views/ProductSYS/ProductSyn_Detail.cshtml">
+      <publishTime>11/29/2019 23:12:30</publishTime>
     </File>
     <File Include="Views/Sale/Index.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
@@ -4291,13 +4378,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:15</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
-      <publishTime>11/09/2017 10:43:16</publishTime>
+      <publishTime>11/24/2019 22:25:37</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutCompetitor.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutDefault.cshtml">
-      <publishTime>08/26/2017 22:39:15</publishTime>
+      <publishTime>11/24/2019 22:08:41</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutLogin.cshtml">
       <publishTime>08/26/2017 22:39:15</publishTime>
@@ -4357,7 +4444,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/26/2017 22:39:16</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/08/2017 15:17:16</publishTime>
+      <publishTime>11/30/2019 07:54:42</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -223,7 +223,7 @@ namespace Viglacera.Controllers.Admin.Product
 
             return PartialView(listProduct.ToPagedList(pageNumber, pageSize));
         }
-        public ActionResult UpdateInfoProduct(string code,string productid,string chkPri, string price, string saleprice, string cbIsActive, string chkHome, string chkSale, string ordernumber, string idCate, string Status)
+        public ActionResult UpdateInfoProduct(string code,string productid,string chkPri, string price, string saleprice, string cbIsActive, string chkHome, string chkSale, string chkPriority, string ordernumber, string idCate, string Status)
         {
             if (ClsCheckRole.CheckQuyen(4, 2, int.Parse(Request.Cookies["Username"].Values["UserID"])) == true)
             {
@@ -235,7 +235,8 @@ namespace Viglacera.Controllers.Admin.Product
                 Product.Code = code;
                 Product.ViewHomes = bool.Parse(chkHome);
                 Product.Active = bool.Parse(cbIsActive);
-                Product.ProductSale = bool.Parse(chkSale);
+                Product.ProductSale = bool.Parse(chkSale); Product.Priority = bool.Parse(chkPriority);
+
                 Product.idCate = int.Parse(idCate);
                 int idcates = int.Parse(idCate); ;
                 int Ord = int.Parse(ordernumber);

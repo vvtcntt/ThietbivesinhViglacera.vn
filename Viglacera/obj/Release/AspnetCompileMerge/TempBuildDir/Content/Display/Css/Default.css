@@ -100,7 +100,7 @@ src:url(../Font/UTMCafeta.ttf)
 #Menu #ContentMenu #ul_1{ width:100%; height:auto; float:left; margin:0px; position:relative	}
 #Menu #ContentMenu #ul_1 .li_1{ float:left; background:url(../iCon/icon_bg_Menu.png) no-repeat right center scroll transparent; position:relative}
 #Menu #ContentMenu #ul_1 .li_1:last-child{ background:none}
-#Menu #ContentMenu #ul_1 .li_1 a{ font-size:14px; text-transform:uppercase; color:#525252; padding:10px 25px; display:block}
+#Menu #ContentMenu #ul_1 .li_1 a{ font-size:14px; text-transform:uppercase; color:#525252; padding:10px 21px; display:block}
 #Menu #ContentMenu #ul_1 .li_1:hover{ background:#FFF; border-radius:3px; border:1px solid #eaeaea}
 #Menu #ContentMenu #ul_1 .li_1:first-child{ background:#FFF; border-radius:3px}
 #Menu #ContentMenu #ul_1 .li_1 a .iConHomes{ width:16px; height:13px; float:left; margin:2px 7px 0px 0px; background:url(../iCon/icon_Homes.png) no-repeat transparent}
@@ -581,3 +581,9 @@ background:url(../iCon/icon.png) no-repeat scroll 0px -255px transparent}
 .Tear_Supports .Right_Tear_Support .imgSkype{ width:76px; height:auto; float:left; margin:0px 3px; display:block}
 .Tear_Supports .Right_Tear_Support .topTearSupport{width:100%; height:auto; float:left; margin:0px; text-align:center}
 .Tear_Supports .Right_Tear_Support .topTearSupport a img{width:46%; height:22px; margin:0px auto}
+.timeWorks{width:auto; height:auto; float:left; margin:0px; color:#333; border:1px dashed #a7a7a7; position:relative; border-radius:5px; padding:7px; background:url(../icon/clock.gif) no-repeat 7px center  scroll #fffef1; padding-left:60px;  }
+.timeWorks .tm1{ font-size:12px; margin:0px 5px; display:block; text-transform:uppercase; font-weight:bold;}
+.timeWorks .tm1 strong{color:#ff5501; font-size:22px; font-weight:bold}
+.timeWorks .tm2{ font-size:14px; margin:0px 5px; display:block; font-style:italic}
+.timeWorks .tm3{ font-size:14px; margin:0px 5px; display:block; color:#ff5501}
+.timeWorks .tm3 strong{color:#0080ec}

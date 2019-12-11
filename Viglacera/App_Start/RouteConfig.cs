@@ -19,6 +19,10 @@ namespace Viglacera
             routes.MapRoute("Chi_tiet_NPP", "4/{Tag}/{*catchall}", new { controller = "ManufacturersDisplay", action = "ManufacturersDetail", tag = UrlParameter.Optional }, new { controller = "^M.*", action = "^ManufacturersDetail$" });
             routes.MapRoute("Chi_Tiet", "1/{Tag}/{*catchall}", new { controller = "Product", action = "ProductDetail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductDetail$" });
             routes.MapRoute("Danh_Sach", "0/{Tag}/{*catchall}", new { controller = "Product", action = "ListProduct", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ListProduct$" });
+            routes.MapRoute(name: "ban-tin-khuyen-mai", url: "ban-tin-khuyen-mai", defaults: new { controller = "sale", action = "detail" });
+            routes.MapRoute("ProductSyn", "Syn/{Tag}/{*catchall}", new { controller = "ProductSyn", action = "ProductSyn_Detail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductSyn_Detail$" });
+            routes.MapRoute(name: "combo-vilacera", url: "combo-vilacera", defaults: new { controller = "ProductSyn", action = "list" });
+
             routes.MapRoute(name: "Tin-tuc", url: "Tin-tuc.aspx", defaults: new { controller = "News", action = "ListNews" });
             routes.MapRoute(name: "Contact", url: "Lien-he.aspx", defaults: new { controller = "Contacts", action = "Index" });
             routes.MapRoute(name: "SearchProduct", url: "SearchProduct", defaults: new { controller = "Product", action = "Search" });

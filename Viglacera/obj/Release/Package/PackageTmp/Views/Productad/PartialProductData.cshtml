@@ -31,7 +31,8 @@
             <th scope="col">Hiển thị</th>
             <th scope="col">Trang chủ</th>
             <th scope="col">Khuyến mại</th>
-            <th scope="col">Làm mới</th> 
+            <th scope="col">KM Nổi Bật</th>
+            <th scope="col">Làm mới</th>
             <th scope="col">Thao tác</th>
         </tr>
         @{                ViglaceraContext db = new ViglaceraContext();
@@ -126,7 +127,17 @@
                             <input type="checkbox" id="chkSale" value="false" onchange="javascript:return UpdateProduct2(@item.id);" />
                         }
 
-                    </td>
+                    </td><td class="Priority text-center" align="center" style="width:45px;">
+    @if (item.Priority == true)
+    {
+        <input type="checkbox" id="chkPriority" value="true" checked onchange="javascript:return UpdateProduct2(@item.id);" />
+    }
+    else
+    {
+        <input type="checkbox" id="chkPriority" value="false" onchange="javascript:return UpdateProduct2(@item.id);" />
+    }
+
+</td>
                     <td class="Sale text-center" align="center" style="width:45px;">
                         <a href="" title="" onclick="javascript:return UpdateTime(@item.id);"><i class="icon-refresh"></i></a>
                     </td>
@@ -216,7 +227,17 @@
                             <input type="checkbox" id="chkSale" value="false" onchange="javascript:return UpdateProduct2(@item.id);" />
                         }
 
-                    </td>
+                    </td><td class="Priority text-center" align="center" style="width:45px;">
+    @if (item.Priority == true)
+    {
+        <input type="checkbox" id="chkPriority" value="true" checked onchange="javascript:return UpdateProduct2(@item.id);" />
+    }
+    else
+    {
+        <input type="checkbox" id="chkPriority" value="false" onchange="javascript:return UpdateProduct2(@item.id);" />
+    }
+
+</td>
                     <td class="text-center" align="center" style="width:90px;">
                         <a href="" class="action-link-button DeleteProduct" id="@item.id" onclick="javascript:return DeleteProduct(@item.id);" title="Xóa sản phẩm">
                     

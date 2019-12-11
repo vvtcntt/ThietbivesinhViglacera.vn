@@ -1,0 +1,53 @@
+﻿<div class="textwidget">
+    <div id="coccoc-alo-phoneIcon" class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show hidden-xs visible-sm visible-md visible-lg am-call" style="display: block;">
+        <div class="coccoc-alo-ph-circle"></div>
+        <div class="coccoc-alo-ph-circle-fill"></div>
+        <div class="coccoc-alo-ph-img-circle">
+            <a class="pps-btn-img call-des " title="Liên hệ" href="#popup_content" id="btnBuy" rel="miendatwebPopup" target="_blank" rel="noopener"><img src="~/Content/Display/iCon/update/hinhtron.png" alt="Liên hệ" width="50" /></a>
+            <a class="pps-btn-img call-mb " title="Liên hệ" href="tel:1900555566">
+                <img src="~/Content/Display/iCon/update/hinhtron.png" alt="Liên hệ" width="50" /><br />
+            </a>
+        </div>
+    </div>
+    <div id="coccoc-alo-phoneIcon" class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show visible-xs hidden-sm hidden-md hidden-lg am-call" style="display: block;">
+        <div class="coccoc-alo-ph-circle"></div>
+        <div class="coccoc-alo-ph-circle-fill"></div>
+        <div class="coccoc-alo-ph-img-circle">
+            <a class="pps-btn-img call-des" title="Liên hệ" href="#popup_content" id="btnBuy" rel="miendatwebPopup">
+                <img src="~/Content/Display/iCon/update/hinhtron.png" alt="Liên hệ" width="50" />
+            </a><a class="pps-btn-img call-mb " title="Liên hệ" href="tel:1900555566">
+                <br />
+                <img src="~/Content/Display/iCon/update/hinhtron.png" alt="Liên hệ" width="50" /><br />
+            </a>
+        </div>
+    </div>
+</div>
+@model Viglacera.Models.tblConfig
+<div id="popup_content" class="popup" style="top:100px !important">
+    <div id="supportCall">
+        <div id="headerSp">
+            Hỗ trợ khách hàng (Thời gian làm việc :  <span>@Model.TimeWork</span>)
+        </div>
+        <div id="contentSp">
+            <div class="itemSp">
+                <span class="name">Viglacera Nguyễn Xiển</span>
+                <span class="address">Địa chỉ: @Model.Address1</span>
+                <a href="tel:@Model.Hotline1" title="@Model.Address1" class="phone"><img src="~/Content/Display/iCon/update/calling.gif" /> @Model.Hotline1</a>
+                <a href="http://zalo.me/@Model.Hotline1.Replace(" ","").Replace(".","")" rel="nofollow" target="_blank" title="" class="zalo"><img src="~/Content/Display/iCon/update/icon-zalo.png" alt="zalo" /></a>
+
+            </div>
+            <div class="itemSp">
+                <span class="name">Viglacera Phạm Văn Đồng</span>
+                <span class="address">Địa chỉ: @Model.Address2</span>
+                <a href="tel:@Model.Hotline2" title=" @Model.Address2" class="phone"><img src="~/Content/Display/iCon/update/calling.gif" /> @Model.Hotline2</a>
+                <a href="http://zalo.me/@Model.Hotline2.Replace(" ","").Replace(".","")" rel="nofollow" target="_blank" title="" class="zalo"><img src="~/Content/Display/iCon/update/icon-zalo.png" alt="zalo" /></a>
+            </div>
+        </div>
+        <div id="footerSp">
+            <p>Tổng đài bán hàng : <span>@Model.PbxSell</span> . Tổng đài bảo hành : <span>@Model.PbxGua</span></p>
+        </div>
+
+    </div>
+
+</div>
+

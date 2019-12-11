@@ -62,9 +62,10 @@ namespace Viglacera.Controllers.Display.Left
             DateTime dates = DateTime.Now;
             int Date1 = int.Parse(dates.Hour.ToString());
              
-                ViewBag.Hotline = tblconfig.HotlineIN;
-            ViewBag.HotlineOUT = tblconfig.HotlineOUT;
-            ViewBag.MobileOUT = tblconfig.MobileOUT;
+                ViewBag.Hotline1 = tblconfig.Hotline1;
+            ViewBag.Hotline2 = tblconfig.Hotline2;
+            ViewBag.PbxSell = tblconfig.PbxSell;
+            ViewBag.PbxGua = tblconfig.PbxGua;
 
             var listlnk = db.tblUrls.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
             StringBuilder chuoi = new StringBuilder();

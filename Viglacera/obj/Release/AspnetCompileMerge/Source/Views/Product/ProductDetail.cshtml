@@ -23,7 +23,7 @@
                     $(".CountOf").empty();
                     $(".CountOf").append(data.sl);
                 }
-                   ,
+                ,
                 error: function () { }
             });
 
@@ -37,7 +37,7 @@
 
 <div class="Root">
     <div class="Left">
-      @Html.Raw(ViewBag.nUrl)
+        @Html.Raw(ViewBag.nUrl)
     </div>
     <div class="share">
         <span>Chia sẻ</span>
@@ -50,149 +50,152 @@
 <div class="Clear"></div>
 @using (Html.BeginForm("Command", "Product", FormMethod.Post))
 {
- 
-<div id="ListProduct">
-    <div id="Left_Product">
-        <div id="MenuLeft">
-           @Html.Raw(ViewBag.chuoisplq)
+
+    <div id="ListProduct">
+        <div id="Left_Product">
+            <div id="MenuLeft">
+                @Html.Raw(ViewBag.chuoisplq)
+            </div>
+            @{Html.RenderAction("MenuProductDetail", "LeftContent");}
+            @{Html.RenderAction("PartialSupport", "LeftContent");}
         </div>
-        @{Html.RenderAction("MenuProductDetail","LeftContent");}
-        @{Html.RenderAction("PartialSupport", "LeftContent");}
-    </div>
-    <div id="Right_Product">
+        <div id="Right_Product">
 
-        <div id="Content_RightProduct">
+            <div id="Content_RightProduct">
 
-            <div id="ProductDetail">
-                <div class="nVar_Product">
-                    <span>Nội dung Sản phẩm</span>
-                </div>
-                <div id="Content_Product">
-                    <div id="Top_Product">
+                <div id="ProductDetail">
+                    <div class="nVar_Product">
+                        <span>Nội dung Sản phẩm</span>
+                    </div>
+                    <div id="Content_Product">
+                        <div id="Top_Product">
 
-                        <div id="Left_TopProduct">
-                            <div id="spch"></div>
-                            <div id="Image_Detail">
-                                <a href="#" title="@Model.Name"><img src="@Model.ImageLinkDetail" alt="@Model.Name" /></a>
+                            <div id="Left_TopProduct">
+                                <div id="spch"></div>
+                                <div id="Image_Detail">
+                                    <a href="#" title="@Model.Name"><img src="@Model.ImageLinkDetail" alt="@Model.Name" /></a>
+                                </div>
+
+
                             </div>
+                            <div id="Right_TopProduct">
+                                <h1>@Model.Name</h1>
+                                <h2>
+                                    @Model.Description
+                                </h2>
+                                <span class="Code">Mã sản phẩm : @Model.Code</span>
 
-
-                        </div>
-                        <div id="Right_TopProduct">
-                            <h1>@Model.Name</h1>
-                            <h2>
-                                @Model.Description
-                            </h2>
-                            <span class="Code">Mã sản phẩm : @Model.Code</span>
-
-                            @if (Model.Address == "1")
-                            { <span class="Address">
-                                Xuất xứ : Chính hãng
-                            </span>
-                            }
-                            else
-                            {
-                                
-                                 <span class="Address">
-                                Xuất xứ : Liên hệ
-                            </span>
-                            }
-                            @if(Model.Status==true)
-                            { 
-                            <span class="Status">
-                                Tình trạng : Còn hàng
-                            </span>
-                            }
-                           else
+                                @if (Model.Address == "1")
+                                {<span class="Address">
+                                        Xuất xứ : Chính hãng
+                                    </span>
+                                }
+                                else
                                 {
-                                 <span class="Status">
-                                Tình trạng : Hết hàng
-                            </span>
-                            }
-                            <span class="Address">
-                                Bảo hành : @Model.Warranty năm
-                            </span>
-                            <hr class="hr1" />
-                            <span class="Price">
-                                Giá :@string.Format("{0:#,#}", @Model.Price) vnđ
-                            </span>
-                            <span class="PriceSale">
-                                Khuyến mại : @string.Format("{0:#,#}", @Model.PriceSale) vnđ
-                            </span>
-                            <div class="Clear"></div>
-                            <div id="BoxOrder">
-                                <span>Số lượng : </span>
-                                <input type="number" name="txtOrd" value="01" class="txtOrd" /> 
-                                
-                                <button type="submit" name="btnOrder" class="btnOrder"></button>
-                                <input type="text" value="@Model.id" id="idPro" name="idPro" style="opacity:0" />
-                                <input type="text" value="@Model.idCate" id="idCate" name="idCate" style="opacity:0" />
-                            </div>
-                            <div class="Clear"></div>
-                            <div id="Sale">
-                                <span>
-                                    @Model.Sale
+
+                                    <span class="Address">
+                                        Xuất xứ : Liên hệ
+                                    </span>
+                                }
+                                @if (Model.Status == true)
+                                {
+                                    <span class="Status">
+                                        Tình trạng : Còn hàng
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="Status">
+                                        Tình trạng : Hết hàng
+                                    </span>
+                                }
+                                <span class="Address">
+                                    Bảo hành : @Model.Warranty năm
                                 </span>
+                                <hr class="hr1" />
+                                <span class="Price">
+                                    Giá :@string.Format("{0:#,#}", @Model.Price) vnđ
+                                </span>
+                                <span class="PriceSale">
+                                    Khuyến mại : @string.Format("{0:#,#}", @Model.PriceSale) vnđ
+                                </span>
+                                <div class="Clear"></div>
+                                <div id="BoxOrder">
+                                    <span>Số lượng : </span>
+                                    <input type="number" name="txtOrd" value="01" class="txtOrd" />
+
+                                    <button type="submit" name="btnOrder" class="btnOrder"></button>
+                                    <input type="text" value="@Model.id" id="idPro" name="idPro" style="opacity:0" />
+                                    <input type="text" value="@Model.idCate" id="idCate" name="idCate" style="opacity:0" />
+                                </div>
+                                <div class="Clear"></div>
+                                <div id="Sale">
+                                    <span>
+                                        @Model.Sale
+                                    </span>
+                                </div>
+
                             </div>
-
                         </div>
-                    </div>
-                    <div class="GoogleAdsemse">
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <div class="GoogleAdsemse">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-client="ca-pub-8738210846913491"
-                             data-ad-slot="5698818364"
-                             data-ad-format="auto"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </div>
-                    <div id="Detail">
-                        <div class="nDetail">
-                            <span>Chi tiết sản phẩm</span>
+                            <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-8738210846913491"
+                                 data-ad-slot="5698818364"
+                                 data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <div id="Detail">
+                            <div class="nDetail">
+                                <span>Chi tiết sản phẩm</span>
+                            </div>
+                            <div class="Clear"></div>
+                            <div class="ContentDetail">
+                                @Html.Raw(Model.Content)
+                            </div>
                         </div>
                         <div class="Clear"></div>
-                        <div class="ContentDetail">
-                            @Html.Raw(Model.Content)
-                        </div>
-                    </div>
-                    <div class="Clear"></div>
-                    <div id="Parameter">
-                        <div class="nDetail">
-                            <span>Thông số kỹ thuật</span>
-                        </div>
-                        <div class="Clear"></div>
-                        <div class="ContentParameter">
-                           @Html.Raw(@Model.Parameter)
-                        </div>
-                    </div>
-                    <div id="Comment">
-                        <div class="nVar_Comment">
-                            <span>Nhận xét đánh giá </span>
-                        </div>
-                        <div class="Slution">
-                            <div class="Mxh" style="float: left; width: 270px; margin-left: 2px">
-                                <div class="fb-like" data-send="true" data-layout="button_count" data-width="60"
-                                     data-show-faces="true">
-                                </div>
-                                 
-                                <div id="g" style="float: left; margin: 7px 5px; height: 15px; width: 20px">
-                                    <g:plusone size="medium"></g:plusone>
-                                </div>
+                        <div id="Parameter">
+                            <div class="nDetail">
+                                <span>Thông số kỹ thuật</span>
                             </div>
-
+                            <div class="Clear"></div>
+                            <div class="ContentParameter">
+                                @Html.Raw(@Model.Parameter)
+                            </div>
                         </div>
-                        <div class="ContentComment">
+                        <div id="Comment">
+                            <div class="nVar_Comment">
+                                <span>Nhận xét đánh giá </span>
+                            </div>
+                            <div class="Slution">
+                                <div class="Mxh" style="float: left; width: 270px; margin-left: 2px">
+                                    <div class="fb-like" data-send="true" data-layout="button_count" data-width="60"
+                                         data-show-faces="true">
+                                    </div>
 
-                            <div class="fb-comments" data-href="@Request.Url.ToString()" data-num-posts="20" style="width:100%; float:left; margin:0px" width="100%"></div>
+                                    <div id="g" style="float: left; margin: 7px 5px; height: 15px; width: 20px">
+                                        <g:plusone size="medium"></g:plusone>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="ContentComment">
+
+                                <div class="fb-comments" data-href="@Request.Url.ToString()" data-num-posts="20" style="width:100%; float:left; margin:0px" width="100%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 }
 <div class="Clear"></div>
+<div id="Lienket">
+    <a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước">Thay lõi lọc nước</a><a href="http://karofichinhhang.vn" title="karofi  máy lọc nước">Máy lọc nước Karofi chính hãng</a> làm sản phẩm <a href="http://maylocnuocgienghoan.com" title="Máy lọc nước giếng khoan">Máy lọc nước giếng khoan</a> hay <a href="http://thegioibinhnonglanh.vn" title="Bình nóng lạnh">Bình nóng lạnh</a>  hay các sản phẩm <a href="http://viglaceravietnam.com" title="Thiết bị vệ sinh Viglacera">Thiết bị vệ sinh Viglacera</a> chính hãng giá rẻ với  <a href="http://viglaceravietnam.com/bon-cau-viglacera" title="Bồn cầu Viglacera">Bồn cầu Viglacera</a> giá rẻ nhất. Bạn có thể mua <a href="http://Loiloc.com" title="Lõi lọc nước">Lõi lọc nước</a> hoặc một ngày nào đó bạn có thể lựa chọn <a href="http://kangaroochinhhang.vn" title="Kangaroo">Kangaroo</a> với các dòng sản phẩm như <a href="https://kangaroochinhhang.vn/may-loc-nuoc-kangaroo" title="Máy lọc nước Kangaroo">Máy lọc nước Kangaroo</a> hay là mọt sản phẩm khác như <a href="https://kangaroochinhhang.vn/loi-loc-nuoc-kangaroo" title="Lõi lọc nước Kangaroo">Lõi lọc nước Kangaroo</a> chính hãng
+</div>

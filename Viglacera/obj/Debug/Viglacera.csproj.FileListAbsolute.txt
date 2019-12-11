@@ -307,3 +307,207 @@ E:\Data\GIT\ThietbivesinhViglacera.vn\Viglacera\bin\zh-Hant\System.Spatial.resou
 E:\Data\GIT\ThietbivesinhViglacera.vn\Viglacera\obj\Debug\Viglacera.csprojResolveAssemblyReference.cache
 E:\Data\GIT\ThietbivesinhViglacera.vn\Viglacera\obj\Debug\Viglacera.dll
 E:\Data\GIT\ThietbivesinhViglacera.vn\Viglacera\obj\Debug\Viglacera.pdb
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Viglacera.dll.config
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Viglacera.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Viglacera.pdb
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Antlr3.Runtime.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\CKEditor.NET.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\CKFinder.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.AspNet.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.Core.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.SqlServer.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\HtmlAgilityPack.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.Edm.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.OData.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.Infrastructure.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Newtonsoft.Json.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\PagedList.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\PagedList.Mvc.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.Formatting.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.WebRequest.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Spatial.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Helpers.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.OData.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.WebHost.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Mvc.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Optimization.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Razor.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Deployment.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Razor.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\WebGrease.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\WebMatrix.WebData.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\CKEditor.NET.pdb
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\CKFinder.pdb
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.SqlServer.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\HtmlAgilityPack.pdb
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\HtmlAgilityPack.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\PagedList.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\PagedList.Mvc.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Newtonsoft.Json.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.Formatting.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Helpers.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.WebHost.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Mvc.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Razor.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Deployment.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Razor.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\WebMatrix.Data.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\WebMatrix.WebData.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.AspNet.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.Core.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.OData.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.Edm.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.OData.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\System.Spatial.xml
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\de\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\es\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\it\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\de\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\es\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\fr\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\it\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ja\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ko\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\ru\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\zh-Hans\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\bin\zh-Hant\System.Spatial.resources.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.csprojAssemblyReference.cache
+D:\Githubs\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.csproj.CoreCompileInputs.cache
+D:\Githubs\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.csproj.CopyComplete
+D:\Githubs\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.dll
+D:\Githubs\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.pdb
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Viglacera.dll.config
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Viglacera.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Viglacera.pdb
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Antlr3.Runtime.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\CKEditor.NET.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\CKFinder.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.AspNet.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.Core.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.SqlServer.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\HtmlAgilityPack.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.Edm.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.OData.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.Infrastructure.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Newtonsoft.Json.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\PagedList.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\PagedList.Mvc.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.Formatting.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.WebRequest.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Spatial.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Helpers.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.OData.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.WebHost.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Mvc.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Optimization.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Razor.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Deployment.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Razor.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\WebGrease.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\WebMatrix.WebData.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\CKEditor.NET.pdb
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\CKFinder.pdb
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\EntityFramework.SqlServer.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\HtmlAgilityPack.pdb
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\HtmlAgilityPack.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\PagedList.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\PagedList.Mvc.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Newtonsoft.Json.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Net.Http.Formatting.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Helpers.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.WebHost.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Mvc.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Razor.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Deployment.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.WebPages.Razor.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\WebMatrix.Data.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\WebMatrix.WebData.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.AspNet.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.Core.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OAuth.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Web.Http.OData.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.Edm.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\Microsoft.Data.OData.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\System.Spatial.xml
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\de\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\es\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\it\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\de\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\es\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\fr\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\it\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ja\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ko\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ru\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\de\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\es\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\fr\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\it\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ja\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ko\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\ru\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\zh-Hans\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\bin\zh-Hant\System.Spatial.resources.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.csprojAssemblyReference.cache
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.csproj.CoreCompileInputs.cache
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.csproj.CopyComplete
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.dll
+E:\seabig\Project Month\Thietbivesinhviglacera\Thietbivesinhviglacera\Viglacera\obj\Debug\Viglacera.pdb

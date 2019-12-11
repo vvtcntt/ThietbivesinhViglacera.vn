@@ -1,0 +1,135 @@
+
+#lean_overlay {
+	position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#popup, .popup {
+    width: auto;
+ 	padding-bottom: 2px;
+	display:none;
+     border-radius: 5px; -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    margin-left:-360px !important;
+ 
+}
+.popup {
+    width: auto;
+    padding-bottom: 2px;
+    display: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: -360px !important;
+}
+#popup-header, .popup-header { 
+	background: url(../img/hd-bg.png); 
+	padding: 18px 18px 14px 18px; 
+	border-bottom: 1px solid #CCC; 
+	border-top-left-radius: 5px; 
+	-moz-border-radius-topleft: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	border-top-right-radius: 5px; 
+	-moz-border-radius-topright: 5px; 
+	-webkit-border-top-right-radius: 5px; 
+}
+
+#popup-header  h2, .popup-header  h2 { color: #444; text-align:center; font-size: 2em; font-weight: 700; margin-bottom: 3px; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
+#popup-header  p, .popup-header  p { color: #444; font-size: 1.3em; margin: 0; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); text-shadow: none; }
+.info_popup { text-align:center; margin:20px; }  
+
+
+#supportCall { width:700px; height:auto; float:left; margin:10px; position:relative; background:#FFF; padding:5px; border-radius:4px}
+
+#headerSp{    padding: 15px; text-indent:16px;
+    border-bottom: 1px solid #e5e5e5; line-height:20px; color:#333; font-size:20px}
+    #headerSp span{font-weight:bold; color:#F00}
+    #contentSp {
+        width: auto;
+        float: left;
+        margin: 0px;
+        padding: 15px
+    }
+#contentSp .itemSp{width:46%; float:left; margin:0px 0px 10px 10px;  border-right:2px solid #CCC; padding-right:10px}
+#contentSp .itemSp:last-child{border:none}
+#contentSp .itemSp .name{font-weight:bold; font-size:14px; margin:5px; display:block}
+#contentSp .itemSp .address{font-size:13px; color:#666; margin:5px; display:block}
+#contentSp .itemSp a{font-size:22px; color:#F00; margin:5px; display:inline-block}
+#contentSp .itemSp .phone img{width:25px; height:auto; display:inline-block; float:left; margin-right:10px}
+#contentSp .itemSp .zalo img{width:30px; height:auto; display:inline-block; float:left; margin-right:10px; margin-bottom:-5px}
+
+#footerSp{width:100%; height:auto; float:left; border-top:1px solid #e5e5e5; padding:5px 0px; background:#e8e8e8}
+#footerSp p{font-size:14px; color:#333; margin:5px;  text-align:center}
+#footerSp p span{color:#F00; margin:0px; font-weight:bold}
+@media screen and (max-width: 480px) { 
+#supportCall { width:100% !important; padding:0px !important; margin:0px !important}
+#contentSp .itemSp{ border:none
+}
+#contentSp{padding:0px !important}
+#popup_content{ left:0% !important; margin-left:0px !important}
+.coccoc-alo-phone { left:5px !important; bottom:5px !important}
+}
+  
+ 
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display:none
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

@@ -1,0 +1,129 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+}
+
+@model Caesar.Models.tblProductSyn
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("#btnOrder").click(function () {
+            link = $(this).attr('rel');
+            var id = $(this).attr('title');
+            var Ord = $("#txtOrd").val();
+
+            $.ajax({
+
+                url: '/Order/OrderAdd',
+                type: 'post',
+                dataType: 'json',
+                data: { "id": id, "Ord": Ord },
+                success: function (data) {
+                    $(".CountOf").empty();
+                    $(".CountOf").append(data.sl);
+                }
+                ,
+                error: function () { }
+            });
+
+        });
+
+
+
+    });
+
+</script>
+
+<div class="Root">
+    <div class="Left">
+        @Html.Raw(ViewBag.nUrl)
+    </div>
+    <div class="share">
+        <span>Chia sẻ</span>
+        <a class="share-face" target="_blank" href="">&nbsp;</a>
+        <a class="share-mail-2" target="_blank" href="mailto:info@ferroli.com.vn?Subject=Ferroli Website - Tôi quan tâm tới mục này&amp;body=ferroli.com.vn/binh-nuoc-nong-truc-tiep/c/2">&nbsp;</a>
+        <a class="share-google" target="_blank" href="https://plus.google.com/share?url=ferroli.com.vn/binh-nuoc-nong-truc-tiep/c/2">&nbsp;</a>
+    </div>
+</div>
+
+<div class="Clear"></div>
+@using (Html.BeginForm("Command", "Product", FormMethod.Post))
+{
+
+    <div id="ListProduct">
+        <div id="Left_Product">
+            <div id="MenuLeft">
+                @Html.Raw(ViewBag.chuoisplq)
+            </div>
+            @{Html.RenderAction("MenuProductDetail", "LeftContent");}
+            @{Html.RenderAction("PartialSupport", "LeftContent");}
+        </div>
+        <div id="Right_Product">
+
+            <div id="Content_RightProduct">
+
+                <div id="ProductDetail">
+                    <div class="nVar_Product">
+                        <span>Nội dung Sản phẩm</span>
+                    </div>
+                    <div id="Content_Product">
+                        <div id="Top_Product">
+
+                            <div id="Left_TopProduct">
+                                <div id="spch"></div>
+                                <div id="Image_Detail">
+                                    <a href="#" title="@Model.Name"><img src="@Model.ImageLinkDetail" alt="@Model.Name" /></a>
+                                </div>
+
+
+                            </div>
+                            <div id="Right_TopProduct">
+                                <h1>@Model.Name</h1>
+                                <h2>
+                                    @Model.Description
+                                </h2>
+                                <span class="Code">Mã sản phẩm : @Model.Code</span>
+ 
+                                    <span class="Status">
+                                        Tình trạng : Còn hàng
+                                    </span>
+                                
+                                <hr class="hr1" />
+                                <span class="Price">
+                                    Giá :@string.Format("{0:#,#}", @Model.Price) vnđ
+                                </span>
+                                <span class="PriceSale">
+                                    Khuyến mại : @string.Format("{0:#,#}", @Model.PriceSale) vnđ
+                                </span>
+                                <div class="Clear"></div>
+                                 
+                                <div class="Clear"></div>
+                                 
+
+                            </div>
+                        </div>
+                        <div id="Detail">
+                            <div class="nDetail">
+                                <span>Chi tiết sản phẩm</span>
+                            </div>
+                            <div class="Clear"></div>
+                            <div class="ContentDetail">
+                                @Html.Raw(Model.Content)
+                                <div class="Clear"></div>
+                                @Html.Raw(ViewBag.chuoisosanh)
+                                <div class="Clear"></div>
+                                @Html.Raw(ViewBag.chuoipr)
+
+                            </div>
+                        </div>
+                        <div class="Clear"></div>
+                         
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<div class="Clear"></div><div id="boxlink"><a href="http://karofichinhhang.vn" title="Máy lọc nước karofi">Karofi chính hãng</a> làm sản phẩm <a href="http://maylocnuocgienghoan.com" title="Máy lọc nước giếng khoan">Máy lọc nước giếng khoan</a><a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước">bạn muốn thay lõi lọc nước tại nhà</a>hãy liên hệ tới <a href="http://kangaroochinhhang.vn" title="Kangaroo chính hãng">Kangaroochinhhang.vn</a> nếu bạn mua <a href="https://kangaroochinhhang.vn/may-loc-nuoc-kangaroo" title="Máy lọc nước Kangaroo">Máy lọc nước của Kangaroo</a> hay mua <a href="https://kangaroochinhhang.vn/loi-loc-nuoc-kangaroo" title="Lõi lọc nước Kangaroo">Lõi lọc nước Kangaroo chính hãng</a> hay <a href="http://Viglaceravietnam.com" title="Thiết bị vệ sinh Viglacera">Thiết bị vệ sinh Viglacera</a> <a href="http://thayloilocnuoc.com" title="Thay lõi lọc nước tại nhà">Thay lõi lọc nước tại nhà</a>  <a href="http://thegioibinhnonglanh.vn" title="Mua bình nóng lạnh giá rẻ ">Mua bình nóng lạnh giá rẻ</a> hay bạn mua <a href="http://Loiloc.com" title="Lõi lọc nước">Lõi lọc nước</a></div>

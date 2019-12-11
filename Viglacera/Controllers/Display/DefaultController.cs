@@ -101,7 +101,7 @@ namespace Viglacera.Controllers.Display
             int Date1 = int.Parse(DateTime.Now.Hour.ToString());
             
 
-                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> : " + tblconfig.MobileIN + "</p> <p><span class=\"icon_Hotline\"></span> : Hotline : " + tblconfig.HotlineIN + " - Tổng đài bán hàng : "+tblconfig.HotlineOUT+"</p>";
+                ViewBag.Chuoihotline = "<p><span class=\"icon_Phone\"></span> : " + tblconfig.Mobile2 + "- "+tblconfig.Mobile1+"</p> <p><span class=\"icon_Hotline\"></span> : Cơ sở 1 : " + tblconfig.Hotline2 + " - Cơ sở 2 : "+tblconfig.Hotline1+"</p>";
            
             var ListSupport = db.tblSupports.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
             StringBuilder Yahoo = new StringBuilder();
@@ -206,15 +206,19 @@ namespace Viglacera.Controllers.Display
             ViewBag.chuoi = chuoi;
             var video = db.tblVideos.Where(p => p.Active == true).OrderByDescending(p => p.Ord).Take(1).ToList();
             StringBuilder chuoivideo=new StringBuilder();
-            if(video[0].AutoPlay==true)
-            { 
-                chuoivideo.Append( " <iframe width=\"100%\" height=\"242px\" src=\"http://www.youtube.com/embed/"+video[0].Code+"?;hl=en&amp;fs=1&amp;autoplay=1;loop=1;repeat=0;rel=0\" frameborder=\"0\" allowfullscreen></iframe>");
-            }
-            else
+            if(video.Count>0)
             {
-                chuoivideo.Append( " <iframe width=\"100%\" height=\"242px\" src=\"http://www.youtube.com/embed/"+video[0].Code+"?;hl=en&amp;fs=1&amp;autoplay=0;loop=1;repeat=0;rel=0\" frameborder=\"0\" allowfullscreen></iframe>");
+                if (video[0].AutoPlay == true)
+                {
+                    chuoivideo.Append(" <iframe width=\"100%\" height=\"242px\" src=\"http://www.youtube.com/embed/" + video[0].Code + "?;hl=en&amp;fs=1&amp;autoplay=1;loop=1;repeat=0;rel=0\" frameborder=\"0\" allowfullscreen></iframe>");
+                }
+                else
+                {
+                    chuoivideo.Append(" <iframe width=\"100%\" height=\"242px\" src=\"http://www.youtube.com/embed/" + video[0].Code + "?;hl=en&amp;fs=1&amp;autoplay=0;loop=1;repeat=0;rel=0\" frameborder=\"0\" allowfullscreen></iframe>");
+                }
+                ViewBag.chuoivideo = chuoivideo;
             }
-            ViewBag.chuoivideo = chuoivideo;
+           
             return PartialView(listImage);
         }
         public PartialViewResult PartialCenter_Headder()
@@ -271,52 +275,50 @@ namespace Viglacera.Controllers.Display
         }
         public PartialViewResult Productdb()
         {
-            StringBuilder chuoi = new StringBuilder();
-            string kiemtra="";
-            //string level = db.tblGroupProducts.First(p => p.id == 139).Level.ToString();
-            var listMenu = db.tblGroupProducts.Where(p => p.ParentID==139 && p.Active == true).ToList();
-            
-            chuoi.Append("<div id=\"Product_Db\">   ");
-            chuoi.Append("<div class=\"nVar_Product\">   ");
-            chuoi.Append("<div class=\"Left_nVar_Product\"></div>");
-            chuoi.Append("<div class=\"Center_nVar_Product\">   ");
-            chuoi.Append("<span>Sản phẩm đồng bộ</span>   ");
-            chuoi.Append("</div>   ");
-            chuoi.Append("<div class=\"Right_nVar_Product\"></div>   ");
-            chuoi.Append("</div>   ");
-            chuoi.Append("<div id=\"Content_Product_Db\">   ");
-            for (int j = 0; j < listMenu.Count; j++)
+             //string level = db.tblGroupProducts.First(p => p.id == 139).Level.ToString();
+            //var listMenu = db.tblGroupProducts.Where(p => p.ParentID==139 && p.Active == true).ToList();
+
+            var listProductSyn = db.tblProductSyns.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
+            string chuoi = "";
+            if (listProductSyn.Count > 0)
             {
-                int idCate =int.Parse( listMenu[j].id.ToString());
-                var spdongbo = db.tblProducts.Where(p => p.Active == true && p.idCate == idCate && p.ViewHomes == true).OrderBy(p => p.Ord).ToList();
-
-                if (spdongbo.Count > 0)
+                chuoi += "<div id=\"Product_Db\">   ";
+                chuoi += "<div class=\"nVar_Product\">   ";
+                chuoi += "<div class=\"Left_nVar_Product\"></div>";
+                chuoi += "<div class=\"Center_nVar_Product\">   ";
+                chuoi += "<span>Sản phẩm đồng bộ</span>   ";
+                chuoi += "</div>   ";
+                chuoi += "<div class=\"Right_nVar_Product\"></div>   ";
+                chuoi += "</div>   ";
+                chuoi += "<div id=\"Content_Product_Db\">   ";
+                chuoi += "<div class=\"owl-carousel owl-theme\">";
+                for (int i = 0; i < listProductSyn.Count; i++)
                 {
-                    kiemtra = "1";
-                    for (int i = 0; i < spdongbo.Count; i++)
-                    {
-                        chuoi.Append("<div class=\"Tear_1\">   ");
-                        chuoi.Append("<div class=\"spdb\"></div>   ");
-                        chuoi.Append("<div class=\"img_thumb\">   ");
-                        chuoi.Append("<a href=\"/1/" + spdongbo[i].Tag + "-" + spdongbo[i].id + ".aspx\" title=\"" + spdongbo[i].Name + "\"><img src=\"" + spdongbo[i].ImageLinkThumb + "\" title=\"" + spdongbo[i].Name + "\" /></a>   ");
-                        chuoi.Append("</div>   ");
-                        chuoi.Append("<a class=\"Name\" href=\"/1/" + spdongbo[i].Tag + "-" + spdongbo[i].id + ".aspx\" title=\"" + spdongbo[i].Name + "\">" + spdongbo[i].Name + "</a>   ");
-                        chuoi.Append("<span class=\"Headshort\"> › " + spdongbo[i].Description + "</span>   ");
-                        chuoi.Append("<span class=\"Price\">Giá : " + string.Format("{0:#,#}", spdongbo[i].Price) + " vnđ</span>   ");
-                        chuoi.Append("<span class=\"PriceSale\">Khuyến mại : " + string.Format("{0:#,#}", spdongbo[i].Price) + " vnđ</span>   ");
-                        chuoi.Append("</div>   ");
-                    }
-
-                  
+                    chuoi += "<div class=\"item spdb\">";
+                    chuoi += "<div class=\"sptb\"></div>";
+                    chuoi += "<div class=\"img_spdb\">";
+                    chuoi += "<a href=\"/syn/" + listProductSyn[i].Tag + "\" title=\"" + listProductSyn[i].Name + "\"><img src=\"" + listProductSyn[i].ImageLinkThumb + "\" alt=\"" + listProductSyn[i].Name + "\" /></a>";
+                    chuoi += "</div>";
+                    chuoi += "<a href=\"/syn/" + listProductSyn[i].Tag + "\" class=\"Name\" title=\"" + listProductSyn[i].Name + "\">" + listProductSyn[i].Name + "</a>";
+                    chuoi += "<div class=\"Bottom_Tear_Sale\">";
+                    chuoi += "<div class=\"Price\">";
+                    chuoi += "<p class=\"PriceSale\">" + string.Format("{0:#,#}", listProductSyn[i].PriceSale) + " <span>đ</span></p>";
+                    chuoi += " <p class=\"Price_s\">" + string.Format("{0:#,#}", listProductSyn[i].Price) + "</p>";
+                    chuoi += "</div>";
+                    chuoi += "</div>";
+                    chuoi += "</div>";
                 }
+
+                chuoi += "</div>   ";
+                chuoi += "</div>   ";
             }
-            chuoi.Append("</div>   ");
-            chuoi.Append("</div>   ");
             ViewBag.productdb = chuoi;
-            ViewBag.kiemtra = kiemtra;
-            return PartialView();
+             return PartialView();
         }
-        
+        public PartialViewResult callPartial()
+        {
+            return PartialView(db.tblConfigs.First());
+        }
         //Homes
 
         //Count Online
